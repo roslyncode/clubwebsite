@@ -1,0 +1,143 @@
+/*!
+ * Start Bootstrap - Heroic Features (https://startbootstrap.com/template-overviews/heroic-features)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
+ *
+ *
+ * Red color scheme: 2a8dd2 --> ef4836   2488cb --> df3826   1478bb --> cf2816   e4f1fe --> fff0f0
+ */
+
+body {
+  padding-top: 54px;
+  background-color: #fafaff!important;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.card {
+  height: 100%;
+}
+
+.display-3{
+  margin-top: -45px;
+  font-size: 50px;
+}
+
+.lead{
+  font-size: 18px;
+  margin-bottom: -40px;
+}
+
+.card-body{
+  margin-top:-8px;
+  background-color: #f1f3fa!important;
+}
+
+.navbar-brand{
+  color:#2a8dd2!important;
+  font-family: 'Overlock', cursive;
+}
+
+.btn{
+  background-color:#2a8dd2;
+  transition: .5s;
+  transition-timing-function:ease;
+  border-color:#2488cb!important;
+}
+
+.nav-link{
+  color:#ccc!important;
+  transition:.5s;
+  transition-timing-function:ease;
+}
+
+.nav-link:hover{
+  color:#2a8dd2!important;
+}
+
+.m-0{
+  color:#2a8dd2!important;
+}
+
+.my-4{
+  background-color: #e9e9ef!important;
+}
+.signin{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.sign-in{
+  border-radius:6px;
+}
+
+.current{
+  color:#1478bb!important;
+}
+
+.btn:hover{
+  background-color:#1276b9!important;
+}
+
+input{
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ccc;
+  text-align: center;
+}
+
+.transparent{
+  background-color:rgba(255,255,255,0);
+  border-color:rgba(200,200,200,0);
+  width:100%;
+}
+
+@media (max-width: 992px) {
+  .sv-0{
+    margin-top: -10px;
+  }
+  .display-3{
+    margin-top: -25px;
+    font-size: 24px;
+  }
+  .lead{
+    margin-bottom: -20px;
+    font-size: 12px;
+  }
+  .card{
+    width:70%;
+    margin-left: 15%;
+    margin-top: -10px;
+    
+  }
+  .row{
+    text-align: center;
+  }
+  .card-title{
+    font-size: 18px;
+    margin-top: -5px;
+  }
+  .card-text{
+    font-size: 12px;
+    margin-top: -5px;
+  }
+  .card-footer{
+    height: 60px;
+  }
+  .btn-primary{
+    font-size: 13px;
+    margin-top: -5px;
+  }
+}
+
+@media(min-width:1910px){
+  body{
+    zoom:110%;
+  }
+  
+}
