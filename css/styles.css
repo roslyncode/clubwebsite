@@ -142,11 +142,21 @@ input{
   
 }
 
-#spont{
-  text-align: center;
-  margin-top: -2px;
+.spon {
+  float: left;
+  width: 300px;
 }
 
-#spon{
+.spon1, .spon2 {
   text-align: center;
+}
+
+.spon1 {
+  font-size: 20px;
+}
+
+.spon2 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 15px;
 }
