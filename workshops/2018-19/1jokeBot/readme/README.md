@@ -205,7 +205,7 @@ Go to the `Connect` tab, choose Telegram.
 
 Go on your phone and download the Telegram app. If you dont have service or dont want to waste data, call a board member over (the school wifi blocks Telegram, so don't waste your time trying).
 
-### Monitor and Train Your Bpt
+### Monitor and Train Your Bot
 
 The `Monitor` tab will help you sharpen your bot's intelligence over time.
 
@@ -215,4 +215,14 @@ Keep and eye on this tab and train your bot regularly:
 - Archive the message if it matches the right intent
 - Assign the correct intent if an invalid intent was matched or none at all
 
-#### Congratulations!!! You have completed our first workshop of the year!
+#### <div class="cong">Congratulations!!! You have completed our first workshop of the year!</div>
+
+<style>
+.cong{
+animation: ease nr 3s infinite;}
+@keyframes nr{
+    0%{color:#333}
+    50%{color:#47a}
+    100%{color:#333}
+}
+</style>
