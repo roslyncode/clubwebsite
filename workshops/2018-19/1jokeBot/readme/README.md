@@ -215,11 +215,14 @@ Keep and eye on this tab and train your bot regularly:
 - Archive the message if it matches the right intent
 - Assign the correct intent if an invalid intent was matched or none at all
 
-#### <div class="cong">Congratulations!!! You have completed our first workshop of the year!</div>
+<div class="cong">Congratulations!!! You have completed our first workshop of the year!</div>
 
 <style>
 .cong{
-animation: ease nr 3s infinite;}
+    animation: ease nr 3s infinite;
+    font-weight: bold;
+    font-size:18px;
+}
 @keyframes nr{
     0%{color:#333}
     50%{color:#47a}
