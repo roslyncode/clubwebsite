@@ -173,4 +173,46 @@ Click on `ADD CONDITION` to trigger messages and add the condition: `If @ask-jok
 
 Then choose the action type `SEND MESSAGE`, choose Text format and type the best joke you know:
 
-<ime src="../photos/action1.png">
+<img src="../photos/action1.png">
+
+### Give Different Possible Answers to Your Bot
+
+Click on the little `+` over your message to add a new message to your random list, so that we don’t always send the same joke. 
+
+If you click again on `SEND MESSAGE` below, you can send multiple messages at the same time.
+
+<img src="../photos/joke.png">
+
+Let your creativity speak.
+
+Nice! Once we’re good with our jokes, let’s cover the two other intents.
+
+Click on `ADD A NEW MESSAGE GROUP` and set as condition: `If @laughs is-present`
+
+I decided to send gifs in this case, so I clicked on `SEND MESSAGE`, and `Image` format. 
+
+Try not to spend too much time searching for images or gifs on Google. ALso, if the image doesn't autmatically show up, it doesn't work. I'm sorry but you have to pick a different one.
+
+*P.S. In order to get the image url, right click on it, then select `Copy image address`.*
+
+Repeat the process for the last intent.
+
+### Connect Your Bot to A Messaging Platform
+
+Now, it’s time to let go the test console and deploy your bot to a public messaging platform.
+
+Go to the `Connect` tab, choose Telegram.
+
+Go on your phone and download the Telegram app. If you dont have service or dont want to waste data, call a board member over (the school wifi blocks Telegram, so don't waste your time trying).
+
+### Monitor and Train Your Bpt
+
+The `Monitor` tab will help you sharpen your bot's intelligence over time.
+
+It gathers all the messages your bot receives and shows what intent was matched.
+
+Keep and eye on this tab and train your bot regularly:
+- Archive the message if it matches the right intent
+- Assign the correct intent if an invalid intent was matched or none at all
+
+#### Congratulations!!! You have completed our first workshop of the year!
