@@ -23,7 +23,7 @@ Set `English` as the default language.
 
 You can keep your bot public as there is no private info, but you can change this setting later.
 
-<img src="../photos/botSetup.png" width="200">
+<img src="../photos/botSetup.png" width="400" style="text-align: center">
 
 ### The Stages of Bot-Building
 
@@ -64,6 +64,57 @@ If you chose the pre-defined Skill `Greetings` when you setup your bot, you will
 
 As Recast.AI is collaborative, you do not have to recreate each intent every time! You can 'fork' an intent someone already created to clone it right into your bot. Since we need to understand that our user wants to be told a joke, let’s find if the community has already created this intent for us.
 
-Type “joke” in the input Search!
+Type `joke` in the input Search!
 
 You can click on the intention names if you want to check their full content. The first result will work just fine for us.
+
+### Create a New Intent
+
+If you want a custom intent, you can build it from scratch. Here, we want the bot to understand when someone laughs at the joke.
+
+Click on `+ CREATE` on the right of the search field, and choose a name for your intent:
+
+<img src="../photos/pos.png">
+
+Repeat this process for intent that gathers negative reactions to your jokes:
+
+<img src="../photos/neg.png">
+
+### Add Expressions
+
+Now that we have intents, we need to populate them with various expressions. An expression is the name of a sentence added to an intent.
+
+A golden rule would be to add 20 expressions to an intent for a development bot, and 50 or more for a production bot.
+
+Click on an intent and add sentences you want your bot to understand. Put yourself in the shoes of the people talking to your bot.What could they possibly ask? Enter a new expression by typing it into the field Add an expression. Here are some examples:
+
+Laughs:
+```
+hahah that’s hilarious
+<br>
+ROFL you’re good!
+<br>
+That, my friend, was an amazing joke.
+<br>
+I haven’t laughed that much in a long time!
+```
+Lame:
+```
+You have no sense of humour whatsoever.
+<br>
+That’s both terrible and offensive.
+<br>
+What the heck was that?
+<br>
+Try harder, that was a very bad joke
+```
+
+### Test Your Bot
+
+Now that your bot is full of expressions, let’s test it with the console:
+
+Click on the TEST bubble icon on the top right, and type a sentence you have not trained your bot with, such as: `Botty bot, can you tell me a joke please?`
+
+You will see which intent was detected under `He’s referring to`. If the algorithm did not detect an intent, or detected an invalid intent (not the intent for asking a joke), that means that you need to train your bot with more expressions.
+
+Once you’re happy with your bot intent detection, it’s time to move to next phase: building your bot flow.
