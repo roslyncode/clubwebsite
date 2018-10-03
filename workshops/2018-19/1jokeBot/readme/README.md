@@ -115,6 +115,50 @@ Now that your bot is full of expressions, let’s test it with the console:
 
 Click on the TEST bubble icon on the top right, and type a sentence you have not trained your bot with, such as: `Botty bot, can you tell me a joke please?`
 
-You will see which intent was detected under `He’s referring to`. If the algorithm did not detect an intent, or detected an invalid intent (not the intent for asking a joke), that means that you need to train your bot with more expressions.
+You will see which intent was detected under `User is referring to`. If the algorithm did not detect an intent, or detected an invalid intent (not the intent for asking a joke), that means that you need to train your bot with more expressions.
 
 Once you’re happy with your bot intent detection, it’s time to move to next phase: building your bot flow.
+
+### Build and Manage Conversation Flow
+
+Now that the brain of your bot is all filled up, click on the `Build` tab.
+
+The `Build` tab is where you find `Bot Builder`. It helps you construct the conversation flow of your bot using Skills.
+
+### What is a Skill?
+
+Each Skill represents one thing that your bot knows how to do, and they can interact with each other. Your skill can be a complicated one – such as managing payment by credit or simple – answering basic questions
+
+When you create a new bot, forking skills you already made to the new one will keep making your bots more powerful. You can also fork skills created by other people on the platform, so you don’t have to reinvent the wheel!
+
+If you chose the pre-defined skill `Greetings` during the creation of your bot, it will already be in your interface.
+
+Click its name to check its details.
+
+A skill has four parts:
+
+- Readme: Where you explain the purpose of your skill.
+- Triggers: Where you define why this skill should be activated after a user message
+- Requirements: Describes what information this skill has to collect, and what questions need to be asked to fulfill the requirements.
+- Actions: What to do once the requirements are fulfilled.
+
+If you navigate through the tabs, you’ll see that this skill is structured as follows:
+- It is triggered if the intention greetings or the intention goodbye are matched.
+- It has no requirements, because it does not need to collect additional information. That means that it will execute actions directly after a trigger.
+- It has two possible actions: If the intention matched is greetings, it sends a random welcoming message chosen from a list, and if the intention is goodbye, it does the same thing, but picks the message from a different list
+
+It’s time to create our own Skill with the same structure.
+
+### Build Your Own Skill
+
+Go back to the Build tab and click on `+ Create skill` on the left.
+
+You have three different types of skills: `Business`, `Floating`, and `Fallback`. On the one hand, `Business` and `Floating` have no structural differences. Yet differentiating the two types of skill helps when you have a lot of them. `Fallback` skills, on the other hand, trigger when no other skill has their Triggers fulfilled after a user message. Most of the time, you’ll have only one of this kind, where you can remind the user what your bot can do, and ask them to rephrase.
+
+Our skill will be of `Floating` type. Give it the name you want, I chose `tell-me-a-joke`.
+
+<img src="../photos/float.png">
+
+Double-click on the skill and go to the `Triggers` tab. We want to activate our skill if one of the three intentions we created are matched.
+
+<img src="../photos/trigger.png">
