@@ -23,7 +23,7 @@ Set `English` as the default language.
 
 You can keep your bot public as there is no private info, but you can change this setting later.
 
-<img src="../photos/botSetup.png" width="400" style="text-align: center">
+<img src="../photos/botSetup.png" width="750" style="text-align: center">
 
 ### The Stages of Bot-Building
 
@@ -162,3 +162,15 @@ Our skill will be of `Floating` type. Give it the name you want, I chose `tell-m
 Double-click on the skill and go to the `Triggers` tab. We want to activate our skill if one of the three intentions we created are matched.
 
 <img src="../photos/trigger.png">
+
+Click on the bottom `+` button to add a new condition. Don’t forget to change the condition to `OR` by clicking on `AND`, since it is an `AND` condition by default and we want to activate our skill when any of these intentions are matched.
+
+We won’t need to do anything in the Requirements, because we don’t have anything to ask. But you can improve the bot by asking for some information there, like what kind of jokes they prefer, or how old they are if you want to add some adult jokes.
+
+Head to the Actions tab and create your first message group by clicking `ADD NEW MWSSAGE GROUP`.
+
+Click on `ADD CONDITION` to trigger messages and add the condition: `If @ask-joke is-present`. The `@` stands for intent type. We’ll cover other types later.
+
+Then choose the action type `SEND MESSAGE`, choose Text format and type the best joke you know:
+
+<ime src="../photos/action1.png">
