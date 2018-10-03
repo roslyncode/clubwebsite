@@ -23,7 +23,7 @@ Set `English` as the default language.
 
 You can keep your bot public as there is no private info, but you can change this setting later.
 
-<img src="../photos/botSetup.png">
+<img src="../photos/botSetup.png" width="200">
 
 ### The Stages of Bot-Building
 
