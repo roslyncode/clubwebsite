@@ -239,6 +239,6 @@ You will need 3 intents
 - one to listen for `Who's there?`
 - one to listen for `[Person] who?`
 
-Then create 3 new message groups to listen for these intents and respond to them (in the build tab)
+Then create 3 new message groups to listen for these intents and have the bot respond to them (in the build tab)
 
 Keep testing and trying, good luck!
