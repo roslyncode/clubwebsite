@@ -229,3 +229,16 @@ Keep and eye on this tab and train your bot regularly:
     100%{color:#333}
 }
 </style>
+
+### Additional Challenge
+
+Create a knock joke. 
+
+You will need 3 intents 
+- one to listen for `Tell me a knock knock joke`
+- one to listen for `Who's there?`
+- one to listen for `[Person] who?`
+
+Then create 3 new message groups to listen for these intents and respond to them (in the build tab)
+
+Keep testing and trying, good luck!
