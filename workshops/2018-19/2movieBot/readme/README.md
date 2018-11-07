@@ -6,6 +6,7 @@
 <img src="../photos/moviedbot.gif" style="width:30%">
 
 ### Making the Movie Bot
+---
 
 Interacting with third party APIs (such as The Movie Database) allows for much more interesting use cases that simple QnA chatbots. With Bot Skills, we added the option to call webhooks directly from the builder, which makes it even easier.
 
@@ -17,7 +18,7 @@ Today’s bot requires several steps:
 
 You’ll need a Recast.AI account, Node.JS and potentially Ngrok for testing.
 
-### Extracting Key Info From a Sentence
+#### Extracting Key Info From a Sentence
 
 *Intents* are helpful to determine the overall meaning of a sentence. For our use case, knowing that the user wants to watch something is not enough.
 
@@ -72,6 +73,7 @@ You should add many more examples: 15 would be nice, but a production-ready bot 
 >You can see here that “French” was detected as a nationality, not a language, because that’s what it is in this context. When building the bot flow, we’ll make sure to check for these two entities.
 
 ### Building Your Bot Flow
+---
 
 Since we just need to make sure all our criteria are filled before calling a Node.JS API, the build part will be rather simple.
 
@@ -116,6 +118,7 @@ Next, add an action `RESET` to empty the memory once the call has been made.
 All your bot needs now is its API to get your movies!
 
 ### Creating the Movie Bot API
+---
 
 The NodeJS part of this bot is fairly simple: It will behave as an HTTP proxy between Recast.AI and The Movie Database.
 
@@ -123,7 +126,7 @@ When your application receives a request from Recast, it sends a search query to
 
 Start by scaffolding your project:
 
-```js
+```node.js
 mkdir movie-bot && cd movie-bot
 npm init
 npm install --save express body-parser axios
@@ -132,7 +135,7 @@ touch index.js config.js discoverMovie.js
 
 You will need a token to use the Movie Database API, go here to generate one, and fill your config.js file:
 
-```js
+```node.js
 module.exports = {
    PORT: 5000,
    MOVIEDB_TOKEN: 'XXX',
@@ -141,7 +144,7 @@ module.exports = {
 
 Let’s create an Express application to handle the requests from Recast:
 
-```js
+```node.js
 // index.js
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -163,7 +166,7 @@ We asked Recast to send a POST request to `/discover-movies` when a user has fil
 
 The main goal of our controller is to pick and format the preferences from the memory to send them to the Movie Database’s API:
 
-```js
+```node.js
 // index.js
 app.post('/discover-movies', (req, res) => {
   console.log('[POST] /discover-movies');
@@ -202,7 +205,7 @@ We need `getGenreId` because the Movie Database can’t search for a specific ge
 
 Here is how to translate a genre name to its id:
 
-```js
+```node.js
 // index.js
 const movieGenres = [
    { id: 12, name: 'Adventure' },
@@ -246,7 +249,7 @@ function getGenreId(genre) {
 
 Now that we have extracted and formatted all the filters of the request, we need to send the request to the Movie Database and format the answer:
 
-```js
+```node.js
 // discoverMovie.js
 const axios = require('axios');
 const config = require('./config.js');
