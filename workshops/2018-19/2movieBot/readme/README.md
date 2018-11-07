@@ -3,7 +3,7 @@
 
 ### Demo
 
-<img src="../photos/moviedbot.gif">
+<img src="../photos/moviedbot.gif" style="width:30%">
 
 ### Making the Movie Bot
 
