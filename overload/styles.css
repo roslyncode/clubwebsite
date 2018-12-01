@@ -1,0 +1,33 @@
+#head{
+    height: 100vh;
+    background-color: #06446b;
+    color: 	#F5F5F5;
+}
+
+#head h1{
+    font-family: 'Permanent Marker', cursive;
+}
+
+#head h2{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+}
+
+#head h3{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    background-color: #03253b
+}
+
+#head h4{
+    font-family: 'Oswald', sans-serif;
+}
+
+#moreInfo{
+    
+    
+}
+
+#faq h4{
+    font-size: 20px;
+}
