@@ -8,8 +8,8 @@
     /* Create the parallax scrolling effect */
     
     background-position: center;
-    background-repeat: repeat-x space;
-    background-size: 50px;
+    background-repeat: round;
+    background-size: 500px;
     background-color: #032133;
 }
 
