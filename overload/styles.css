@@ -1,6 +1,6 @@
 .parallax {
     /* The image used */
-    background-image: url("img/robotDARK.png");
+    /* background-image: url("img/robotDARK.png");
 
     /* Set a specific height */
     min-height: 500px; 
@@ -20,8 +20,22 @@
     color: 	#F5F5F5;
 }
 
+#head img{
+    max-height:50vh;
+}
+
+@media only screen and (max-width: 575px) {
+    #head img {
+        height: 25vh;
+    }
+    #head{
+        height: 100%
+    }
+}
+
 #head h1{
     font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
 }
 
 #head h2{
