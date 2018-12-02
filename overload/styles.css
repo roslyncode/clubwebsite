@@ -40,17 +40,12 @@
 }
 
 #about .container,#faq .container{
-    background-color: white;
-    border-radius: 50px;
+    border-radius: 20px;
     padding: 25px;
 }
 
 #faq h4{
     font-size: 20px;
-}
-
-#sponsors{
-    background-color: grey;
 }
 
 .sponsor {
