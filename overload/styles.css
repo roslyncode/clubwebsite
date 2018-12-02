@@ -1,15 +1,15 @@
 .parallax {
     /* The image used */
-    background-image: url("img/robotWHITE.png");
+    background-image: url("img/robotDARK.png");
 
     /* Set a specific height */
     min-height: 500px; 
 
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+    
     background-position: center;
     background-repeat: repeat-x space;
-    background-size: 500px;
+    background-size: 50px;
     background-color: #032133;
 }
 
