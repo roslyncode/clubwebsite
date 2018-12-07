@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .parallax {
     /* The image used */
     /* background-image: url("img/robotDARK.png");
@@ -51,6 +55,12 @@
 
 #head h4{
     font-family: 'Oswald', sans-serif;
+    font-size:30px;
+}
+
+#head a i{
+    font-size: 50px;
+    color: white;
 }
 
 #about .container,#faq .container,#register .container{
@@ -69,6 +79,11 @@
 #faq h4{
     font-size: 20px;
 }
+
+#LHDphotos img{
+    border-radius: 10px;
+}
+
 
 .sponsor {
   max-width: 100%;
