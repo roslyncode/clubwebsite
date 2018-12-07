@@ -10,7 +10,7 @@
     background-position: center;
     background-repeat: round;
     background-size: 500px;
-    background-color: #032133;
+    background-image: linear-gradient(to bottom, #06446b, #fbfdff);
 }
 
 #head{
@@ -53,9 +53,17 @@
     font-family: 'Oswald', sans-serif;
 }
 
-#about .container,#faq .container{
+#about .container,#faq .container,#register .container{
     border-radius: 20px;
     padding: 25px;
+}
+
+#about img{
+    max-width: 100%;
+}
+
+#about p{
+    font-size: 18px;
 }
 
 #faq h4{
@@ -66,4 +74,10 @@
   max-width: 100%;
   max-height: 100%;
   padding: 10px;
+}
+
+
+#robot img{
+    height: 200px;
+
 }
