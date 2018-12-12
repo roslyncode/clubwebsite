@@ -165,13 +165,13 @@ input{
   color:#ddd;
   font-weight:600;
   font-variant: small-caps;
-  width:230px;
-  margin-left: -20px;
+  width:255px;
+  margin-left: -19px;
   margin-top: -31px;
   position:absolute;
   border-radius: 3px;
-  top:228px;
+  top:233px;
   bottom:0px;
   font-size: 22px;
-  padding: 6px;
+  padding: 11px;
 }
