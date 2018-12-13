@@ -84,8 +84,14 @@ html {
     border-radius: 10px;
 }
 
-#schedule .row{
-    position: relative;
+#schedule p{
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+#schedule .event{
+    line-height: 2;
+    border-bottom: 1px solid #D3D3D3;
 }
 
 .sponsor {
