@@ -63,7 +63,7 @@ html {
     color: white;
 }
 
-#about .container,#faq .container,#register .container{
+#about .container,#faq .container,#register .container,#schedule .container{
     border-radius: 20px;
     padding: 25px;
 }
@@ -84,6 +84,9 @@ html {
     border-radius: 10px;
 }
 
+#schedule .row{
+    position: relative;
+}
 
 .sponsor {
   max-width: 100%;
