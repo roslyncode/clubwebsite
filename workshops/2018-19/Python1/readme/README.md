@@ -137,14 +137,14 @@ Any code put inside of a for loop will be repeated however many times its parame
 ```
     # Syntax for the for loop
     for i in range(num):
-	 # code to be looped over
+	    # code to be looped over
 	# num is the number of times the loop will be executed
 ```
 	
 Example:
 ```
     for i in range(5):
-	 print(i)
+	    print(i)
 	# The above prints
 	0
 	1
@@ -157,7 +157,7 @@ The enhanced for loop can be used when one wants to iterate directly over the co
 ```
     list = ["a","b","c"]
 	for x in list:
-     print(x)
+        print(x)
 	# The above prints
 	a
 	b
@@ -169,9 +169,9 @@ If statements allow you to add logic to your programs. The if statement in pytho
 ```
     x = 2
     if x == 2:
-     # Do something
+        # Do something
     else:
-     # Do something else
+        # Do something else
     # The code above will check if the value of x is 2 and evaluate different pieces of code depending on the truthfulness of the condition
 ```
 
