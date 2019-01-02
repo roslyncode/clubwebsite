@@ -56,7 +56,9 @@ Note: Python actually divides number into multiple datatypes but does not reveal
 
 Python supports all the common arithmetic operations you would expect
 
-![enter image description here](https://i.gyazo.com/c416e5ce181e469f1fc67f17001d639e.png)Note: `x = x + 2` can be abbreviated as `x += 2`
+![enter image description here](https://ibb.co/X2zKQzk)
+
+Note: `x = x + 2` can be abbreviated as `x += 2`
 
 ### Strings
 
@@ -161,6 +163,28 @@ The enhanced for loop can be used when one wants to iterate directly over the co
 	b
 	c
 ```
+## Conditionals
+If statements allow you to add logic to your programs. The if statement in python is composed of a condition and the code which will run.
+
+```
+x = 2
+if x == 2:
+    # Do something
+else:
+    # Do something else
+# The code above will check if the value of x is 2 and evaluate different pieces of code depending on the truthfulness of the condition
+```
+
+There are several truth operators in python which allow you to evaluate statements
+
+```
+a == b # equals
+a > b  # a is greater than b
+a < b  # a is less than b
+a >= b # a is greater than or equal to b
+a <= b # a is less than or equal to b
+```
+
 # Exercises
 
  1. Given a list of integers write a program that prints odd or even for each element. (Hint: Use modulus)
