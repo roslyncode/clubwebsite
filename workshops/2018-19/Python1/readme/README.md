@@ -26,9 +26,9 @@ Variables in python are different from most other languages. There is no need to
 
 For Example:
 The line
-
+```
     word = "bus"
-
+```
 will initiate the variable `word` as a String because it uses quotations.
 
 Python will do the same thing for all other supported datatypes including
@@ -45,11 +45,11 @@ We will only cover number, strings, and lists in this tutorial
 
 Numbers include negative and positive integers and decimals
 All of the following lines are valid python code
-
+```
     num = 2
     dec = 3.2
     bignum = 32030492
-    
+```    
 Note: Python actually divides number into multiple datatypes but does not reveal the actual type to the programmer. You can see the actual type of the number using the type() method.
 
 #### Operations
@@ -62,20 +62,20 @@ Python supports all the common arithmetic operations you would expect
 
 String are any character or group of characters which are initialized with quotations.
 Example:
-
+```
     word = "hello"
     a = "1AsdFsa"
     b = "#4.2@4Isn"
-    
+```    
 #### Concatenating
 
 Strings can be combined in the following manner.
-
+```
     a = "Hello"
     b = "World"
     c = a + " " + b
     # c is set equal to "Hello World"
-
+```
 #### Slicing
 
 Strings in python can be divided using a special "slicing" syntax
@@ -88,12 +88,12 @@ a[:end]      # string from the beginning through end-1
 a[:]         # a copy of the whole string
 ```
 Example:
-
+```
     a = "You won't believe it's not butter."
     print(a[:3])  # prints "You"
     print(a[2:6]) # prints "u wo"
     print(a[4:])  # prints "won't believe it's not butter."
-    
+```  
 ### Lists
 
 Lists are one of the most versatile python types and have a huge number of uses.
@@ -101,44 +101,46 @@ Lists are one of the most versatile python types and have a huge number of uses.
 A list is a collection of other variables. Lists in python can hold any number of variables and are not dependent on the type of the variables that they are holding.
 
 Example: 
-
+```
     nums = [1,3,2]
     strs = ["hi","hello","hola"]
     mix = ["one",2,"three"]
-    
+```  
 #### Adding and removing elements to/from a list
 
 You can use .append(element) to add elements to a list.
 .remove(element) removes the first occurrence of an element from a list
 Example:
-
+```
     a = [1,2,3,4]
     a.append(5)
     print(a) # prints [1,2,3,4,5]
     a.remove(2)
     print(a) # print [1,3,4,5]
+```
    
 #### Slicing
 
 The syntax for slicing used for strings can also be applied to lists.
-   
-
+```
       a = [1,2,3,4,5]
       b = a[1:3]
       print(b) # prints  [2,3]
+```
 
 ## For Loops
 
 For loops are one of the most important concepts in python.
 Any code put inside of a for loop will be repeated however many times its parameters dictate.
-
+```
     # Syntax for the for loop
     for i in range(num):
 	    # code to be looped over
 	# num is the number of times the loop will be executed
+```
 	
 Example:
-
+```
     for i in range(5):
 	    print(i)
 	# The above prints
@@ -147,10 +149,10 @@ Example:
 	2
 	3
 	4
-	
+```
 ### Enhanced For Loop
 The enhanced for loop can be used when one wants to iterate directly over the contents of a list.
-
+```
     list = ["a","b","c"]
 	for x in list:
 		print(x)
@@ -158,7 +160,7 @@ The enhanced for loop can be used when one wants to iterate directly over the co
 	a
 	b
 	c
-	
+```
 # Exercises
 
  1. Given a list of integers write a program that prints odd or even for each element. (Hint: Use modulus) (To be done together)
