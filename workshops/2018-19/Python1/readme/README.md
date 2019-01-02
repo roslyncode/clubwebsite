@@ -83,11 +83,11 @@ Strings can be combined in the following manner.
 Strings in python can be divided using a special "slicing" syntax
 
 ```
-a[n]         # gets nth character in string
-a[start:end] # string start through end-1
-a[start:]    # string start through the rest of the string
-a[:end]      # string from the beginning through end-1
-a[:]         # a copy of the whole string
+    a[n]         # gets nth character in string
+    a[start:end] # string start through end-1
+    a[start:]    # string start through the rest of the string
+    a[:end]      # string from the beginning through end-1
+    a[:]         # a copy of the whole string
 ```
 Example:
 ```
@@ -167,22 +167,22 @@ The enhanced for loop can be used when one wants to iterate directly over the co
 If statements allow you to add logic to your programs. The if statement in python is composed of a condition and the code which will run.
 
 ```
-x = 2
-if x == 2:
-    # Do something
-else:
-    # Do something else
-# The code above will check if the value of x is 2 and evaluate different pieces of code depending on the truthfulness of the condition
+    x = 2
+    if x == 2:
+        # Do something
+    else:
+        # Do something else
+    # The code above will check if the value of x is 2 and evaluate different pieces of code depending on the truthfulness of the condition
 ```
 
 There are several truth operators in python which allow you to evaluate statements
 
 ```
-a == b # equals
-a > b  # a is greater than b
-a < b  # a is less than b
-a >= b # a is greater than or equal to b
-a <= b # a is less than or equal to b
+    a == b # equals
+    a > b  # a is greater than b
+    a < b  # a is less than b
+    a >= b # a is greater than or equal to b
+    a <= b # a is less than or equal to b
 ```
 
 # Exercises
