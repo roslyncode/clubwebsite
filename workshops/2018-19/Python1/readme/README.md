@@ -163,6 +163,6 @@ The enhanced for loop can be used when one wants to iterate directly over the co
 ```
 # Exercises
 
- 1. Given a list of integers write a program that prints odd or even for each element. (Hint: Use modulus) (To be done together)
+ 1. Given a list of integers write a program that prints odd or even for each element. (Hint: Use modulus)
  2. Given a list of strings print an acronym. Example: ["Body", "Odor"] would output "BO"
  3. Given a string print the reverse of the string.
