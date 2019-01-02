@@ -56,7 +56,7 @@ Note: Python actually divides number into multiple datatypes but does not reveal
 
 Python supports all the common arithmetic operations you would expect
 
-![enter image description here](https://ibb.co/X2zKQzk)
+<img src="../photos/p1.png">
 
 Note: `x = x + 2` can be abbreviated as `x += 2`
 
