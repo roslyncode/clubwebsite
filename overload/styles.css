@@ -30,7 +30,7 @@ html {
     margin-bottom: 5vh;
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 766px) {
     #head img {
         height: 25vh;
     }
@@ -63,11 +63,12 @@ html {
 #head a i{
     font-size: 50px;
     color: white;
+    vertical-align: middle;
 }
 
 #head .btn-primary{
     font-family: 'Oswald', sans-serif;
-    width: 150px;
+    width: 275px;
     background-color: rgba(0, 0, 0, 0);
     border-color: white;
     border-width: 5px;
