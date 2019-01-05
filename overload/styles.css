@@ -22,11 +22,12 @@ html {
     background-color: #06446b;
     opacity: 1;
     color: 	#F5F5F5;
-    vertical-align: middle;
 }
 
 #head img{
-    max-height:30vh;
+    margin-top: 10vh;
+    max-height: 30vh;
+    margin-bottom: 5vh;
 }
 
 @media only screen and (max-width: 575px) {
