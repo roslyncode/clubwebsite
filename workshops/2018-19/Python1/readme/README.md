@@ -190,3 +190,17 @@ There are several truth operators in python which allow you to evaluate statemen
  1. Given a list of integers write a program that prints odd or even for each element. (Hint: Use modulus)
  2. Given a list of strings print an acronym. Example: ["Body", "Odor"] would output "BO"
  3. Given a string print the reverse of the string.
+
+# Exercises 2
+
+1. Given a list of arbitrary length filled with random integers, print the list sorted from smallest to greatest. Example Input: [3,2,5,1]
+2. Given a string of words seperated with spaces create a program that splits the string into a list and prints the final list. Example Input: ["Hello darkness my old friend"]
+3. Given a list of words print the words in alphabetical order. Hint: Lookup the ord() function and lower() function
+4. Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5,between 2000 and 3200
+5. Write a program which can compute the factorial of a given numbers.
+
+Bonus:
+
+Read about the input() function here: https://www.programiz.com/python-programming/methods/built-in/input
+
+Try building a 4 function calculator with user input.
