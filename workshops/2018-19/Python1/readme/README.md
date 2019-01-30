@@ -204,3 +204,120 @@ Bonus:
 Read about the input() function here: https://www.programiz.com/python-programming/methods/built-in/input
 
 Try building a 4 function calculator with user input.
+
+# Python Modules
+
+Today we will be using the online IDE repl.it to experiment with several python modules and build a web scraper for stocks.
+
+What is a "module"?
+
+A module is code that someone else has written that can be imported into a python program to be used.
+
+For example, instead of creating a program to represent the date and time you can use the date time module in python
+
+To use a module the `import` statement is required
+
+````
+import datetime
+````
+
+To show the use of modules we will build a stock tracker which scrapes the NASDAQ and will save data on apple stocks for us. This is useful for algotrading which uses algorithms to predict the future prices of stocks and place buys and sells.
+
+We will scrape the price of Apple (AAPL) stocks from https://www.nasdaq.com/symbol/aapl
+
+To begin the program we will import all of the modules needed for our program. The first 2 modules we will need are BeautifulSoup4 which allows us to easily parse a webpage into an understandable format, and requests which allows us to receive the raw HTML of the webpage. We can import these modules as follows.
+
+````
+from bs4 import BeautifulSoup
+import requests
+````
+
+BeautifulSoup is part of a larger module called bs4 which is why we use the `from` keyword.
+
+We will also need the time and date time packages to record the times of the prices we scrape.
+
+````
+from datetime import datetime
+import time
+````
+
+Next we want to set up a dictionary object that stores a key which will be the time, and a value which will be the price of the stock at that time.
+
+````
+timeseries = dict()
+````
+
+We need an infinite loop to continuously collect datapoint. We only want to collect the price of the stock every 5 seconds so we will use the time module to force the program to wait for 5 seconds on each iteration of the loop.
+
+````
+while True:
+	#More code will go here
+	time.sleep(5)
+````
+
+To get the raw HTML for the page we use the requests module.
+
+````
+while True:
+	page = requests.get("https://www.nasdaq.com/symbol/aapl/real-time")
+	time.sleep(5)
+````
+
+Next we want to create a BeautifulSoup object which allows us to easily scrape the price of the stock
+
+````
+while True:
+	page = requests.get("https://www.nasdaq.com/symbol/aapl/real-time")
+	soup = BeautifulSoup(page.text,'html.parser')
+	time.sleep(5)
+````
+
+Now we extract the price from the `soup` object
+
+````
+while True:
+	page = requests.get("https://www.nasdaq.com/symbol/aapl/real-time")
+	soup = BeautifulSoup(page.text,'html.parser')
+	price = soup.find(class_='qwidget-dollar').text[1:]
+	time.sleep(5)
+````
+
+To add an entry to our dictionary we access the dictionary with square brackets and put the key of the new entry in the square brackets. Additionally we use the date time module to get the current time. The str() method converts the date into a string and the float() method converts the price, which is a string, into a number.
+
+````
+while True:
+	page = requests.get("https://www.nasdaq.com/symbol/aapl/real-time")
+	soup = BeautifulSoup(page.text,'html.parser')
+	price = soup.find(class_='qwidget-dollar').text[1:]
+	timeseries[str(datetime.now())] = float(price)
+	time.sleep(5)
+````
+
+Finally we want to save our dictionary into a text file so that we can view the entirety of our results. The code to save data into a file is a little bit more complicated than things we have seen in the past so for now you can use the code provided. Make sure to create a file in the same folder as your python code called "file.txt".
+
+````
+while True:
+	page = requests.get("https://www.nasdaq.com/symbol/aapl/real-time")
+	soup = BeautifulSoup(page.text,'html.parser')
+	price = soup.find(class_='qwidget-dollar').text[1:]
+	timeseries[str(datetime.now())] = float(price)
+	with  open("file.txt",  "w")  as text_file:
+		text_file.write(str(timeseries))
+	time.sleep(5)
+````
+
+Optionally, we can use a print statement to view the results as our script collects stock prices.
+
+````
+while True:
+	page = requests.get("https://www.nasdaq.com/symbol/aapl/real-time")
+	soup = BeautifulSoup(page.text,'html.parser')
+	price = soup.find(class_='qwidget-dollar').text[1:]
+	timeseries[str(datetime.now())] = float(price)
+	with  open("file.txt",  "w")  as text_file:
+		text_file.write(str(timeseries))
+	print(str(datetime.now()) + " " + price)
+	time.sleep(5)
+````
+
+So we have seen that python modules allow us to build practical programs extremely easily. There are thousands of python programs available for you to try. See if you can think of other uses for BeautifulSoup or any other modules you find online.
