@@ -221,7 +221,7 @@ To use a module the `import` statement is required
 import datetime
 ````
 
-To show the use of modules we will build a stock tracker which scrapes the NASDAQ and will save data on apple stocks for us. This is useful for algotrading which uses algorithms to predict the future prices of stocks and place buys and sells.
+To show the use of modules we will build a stock tracker which scrapes the NASDAQ and will save data on apple stocks for us. This is useful for algotrading which uses algorithms to predict the future prices of stocks.
 
 We will scrape the price of Apple (AAPL) stocks from https://www.nasdaq.com/symbol/aapl
 
@@ -272,7 +272,7 @@ while True:
 	time.sleep(5)
 ````
 
-Now we extract the price from the `soup` object
+Now we extract the price from the `soup` object. The class parameter is the HTML class that contains the price on the website. You can identify the name of the class by using inspect element on the webpage.
 
 ````
 while True:
