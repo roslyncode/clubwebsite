@@ -328,4 +328,4 @@ Visit [https://www.dataquest.io/blog/web-scraping-tutorial-python/](https://www.
 
 1. *Easy* Use BS4 to scrape the price of Shrek the Movie from [Amazon](https://www.amazon.com/Shrek-4-Movie-Collection-Mike-Myers/dp/B01E8CKGUE/) and print the price.
 2. *Medium* Using what you learned from the tutorial above write a program that scrapes the synopsis and rating of the shrek movie from IMDb and prints them.
-3. *Hard* Write a program that scrapes [time.is](time.is) and prints the time when the time updates on [time.is](time.is).
+3. *Hard* Write a program that scrapes [time.is](https://time.is) and prints the time when the time updates on [time.is](https://time.is).
