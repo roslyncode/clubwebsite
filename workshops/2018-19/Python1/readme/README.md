@@ -321,3 +321,11 @@ while True:
 ````
 
 So we have seen that python modules allow us to build practical programs extremely easily. There are thousands of python programs available for you to try. See if you can think of other uses for BeautifulSoup or any other modules you find online.
+
+# Challenges
+
+Visit https://www.dataquest.io/blog/web-scraping-tutorial-python/ and learn more about how to use the module BeautifulSoup4. You can use the same python project as last week for these challenges.
+
+1. *Easy* Use BS4 to scrape the price of Shrek the Movie from https://www.amazon.com/Shrek-4-Movie-Collection-Mike-Myers/ and print the price.
+2. *Medium* Using what you learned from the tutorial above write a program that scrapes the synopsis and rating of the shrek movie from IMDb and prints them.
+3. *Hard* Write a program that scrapes time.is and prints the time when the time updates on time.is.
