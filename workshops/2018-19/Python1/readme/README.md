@@ -199,11 +199,17 @@ There are several truth operators in python which allow you to evaluate statemen
 4. Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5,between 2000 and 3200
 5. Write a program which can compute the factorial of a given numbers.
 
-Bonus:
+<b>Bonus:</b>
 
 Read about the input() function here: https://www.programiz.com/python-programming/methods/built-in/input
 
 Try building a 4 function calculator with user input.
+
+<b>Bonus 2:</b>
+
+Create your own text-based story, where you can choose your own adventure!
+
+To do this, you will need user input, print statements, and if statements. You may want to use a method or a loop if you're interested in having the user playing the game again.
 
 # Python Modules
 
