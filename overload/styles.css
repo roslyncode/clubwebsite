@@ -124,3 +124,8 @@ html {
     height: 200px;
 
 }
+
+#card-img-top{
+    object-fit: cover;
+    overflow: hidden;
+}
