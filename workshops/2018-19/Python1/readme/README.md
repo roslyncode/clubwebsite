@@ -335,3 +335,9 @@ Visit [https://www.dataquest.io/blog/web-scraping-tutorial-python/](https://www.
 1. *Easy* Use BS4 to scrape the price of Shrek the Movie from [Amazon](https://www.amazon.com/Shrek-4-Movie-Collection-Mike-Myers/dp/B01E8CKGUE/) and print the price.
 2. *Medium* Using what you learned from the tutorial above write a program that scrapes the synopsis and rating of the shrek movie from IMDb and prints them.
 3. *Hard* Write a program that scrapes [time.is](https://time.is) and prints the time when the time updates on [time.is](https://time.is).
+ 
+# Challenges Extended
+
+1.*Hard* Go to [IMDb](https://www.imdb.com/showtimes/?ref_=shlc_sh) and scrape a list of 20 movies with their metascore. Then sort the list from best score to worst score and print the list.
+2. *Hard* Expanding on the challenge above also print the available showtimes from each movie.
+3. *Hard* Allow the user to select a movie from the list using the input() function. Then print the synopsis for that specific movie. 
