@@ -2,7 +2,7 @@
 HTML is one of the building blocks for creating a website. 
 It creates all the things you see on the page, such as text, images, and videos.
 
-Today I'll be teaching you some of the basics of HTML. If you already know HTML, scroll down to the end of this workshop for some challenges.
+Today I'll be teaching you some of the basics of HTML. If you already know HTML, scroll down to the end of this workshop and try to learn Bootstrap!
 
 To start off, go to [codepen.io](https://codepen.io/pen/). If you're more comfortable with using Cloud 9, you can use that too. However, for the purposes of this tutorial, I'll be using codepen.
 
