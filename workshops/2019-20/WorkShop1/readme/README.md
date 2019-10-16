@@ -39,10 +39,13 @@
 
 ```
 ### Step 5: Do whatever you want 
-##### 1. You can explore the true capabilities of a personal website and all the things you can do by going to: 
-##### https://www.makeuseof.com/tag/7-cool-html-effects-that-anyone-can-add-to-their-website-nb/
+##### 1. You can explore the true capabilities of a personal website and all the things you can do by going to ...
 
+
+<<<<<<< HEAD
 ##### **Feel free to look up other cool things you can do to a website when coding with html!**
+=======
+>>>>>>> parent of 1838d10... Update README.md
 
 
 
