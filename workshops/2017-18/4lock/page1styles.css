@@ -1,0 +1,67 @@
+html{
+    background-color: #C44;
+}
+p{
+  text-align: center;
+  margin-top:15%;
+  font-size:30px;
+  font-family:Verdana;
+  color:#333;
+}
+.switch{
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+}
+
+.slider:after {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 5px;
+  bottom: 5px;
+  background-color: white;
+  transition: .4s;
+}
+input:checked + .slider:after {
+  background-color: #C44;
+}
+
+#label0{
+    left:-150;
+}
+
+#label1{
+    right:-150;
+}
+
+#label2{
+    left:-150;
+    bottom:-300;
+}
+
+#label3{
+    right:-150;
+    bottom:-300;
+}
