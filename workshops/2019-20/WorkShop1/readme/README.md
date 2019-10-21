@@ -40,7 +40,7 @@
 ```
 ### Step 5: Do whatever you want 
 ##### 1. You can explore the true capabilities of a personal website and all the things you can do by going to: 
-##### https://www.makeuseof.com/tag/7-cool-html-effects-that-anyone-can-add-to-their-website-nb/
+##### https://www.w3schools.com/ and looking through html.
 
 ##### **Feel free to look up other cool things you can do to a website when coding with html!**
 
