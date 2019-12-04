@@ -14,7 +14,7 @@
 ##### Step 2: assign the variable a string value, in this case we will assign it the value of "hello world"(Example: variable = "hello world")
 ##### Step 3: To use this variable simply just type print(variable), press run, and it should show hello world 
 ### Creating Number Variables 
-##### Step 1: Just like for variables you must come up with a variable name, the only difference is that you have to assign the variable a numerical value 
+##### Step 1: Just like for string variables you must come up with a variable name, the only difference is that you have to assign the variable a numerical value 
 ##### Example: number = 5
 ##### Step 2: To check to see if this works type print(number) and see if it prints 5 
 
@@ -24,7 +24,7 @@
 ##### You will see that it prints the correct value 
 
 # Using mathematical operations with variables 
-### Python also allows you to use variables that store numbers to perform basic operations 
+### Python also allows you to use numerical variables to perform basic mathematical operations 
 ##### Step 1: create two variables and assign them a numerical value 
 ##### Step 2: Then try to perform a operation with these variables 
 ###### Example: 
