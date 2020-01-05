@@ -42,7 +42,7 @@ print(num1*num2)
 
 # User input with integer values 
 ### Using user input with integer values will be very helpful when trying to make calculators 
-### To do this you just have to type variable = int(input("enter a number: ")) and then print(num)
+### To do this you just have to type num = int(input("enter a number: ")) and then print(num)
 ### This will ask the user to "enter a number" then will print that number
 
 # If statements 
