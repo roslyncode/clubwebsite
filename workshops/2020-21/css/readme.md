@@ -7,20 +7,13 @@ We will teaching the basics of HTML and CSS, using the compiler Cloud9.
 
 
 ### Step 1: Setting up Cloud9
-Before we begin coding, you must set up a Cloud9 account. This is a web based 
-compiler where we will be writting all our code. Got to: https://hackclub.com/cloud9_setup. 
-
-Enter your email and create a new account. Now create a new workspace and name it `PersonalWebsite` and 
-select `Don't set a team for this workspace`. Make sure `public` and the template `HTML5` are selected. 
-
-Click the green `Create workspace` button at the bottom.
+Before we begin coding, you must set up text editor. We recommend using atom, which you can download here: https://atom.io/
 
 
 
 ### Step 2: Setting up the HTML File 
 
-Start by creating an HTML file. Rick click the `PersonalWebsite` folder on the left sidebar and select `New File`.
-Name the file `index.html`. Now double click on the file and it should open up.
+Start by creating a new file. Name it index.html. 
 
 Create the backbone of HTML file by typing the following:
 
@@ -33,6 +26,7 @@ Create the backbone of HTML file by typing the following:
     </body>
 </html>
 ```
+or you can also type html and then hit <kbd>enter<kbd>
 
 Make sure to save as you go along by clicking `file` and `save` or use the shortcut <kbd>Ctrl+s</kbd>. 
 
