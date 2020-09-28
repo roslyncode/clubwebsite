@@ -2,18 +2,23 @@
 # Workshop 1: Personal Website
 
 This workshop is for someone with 0 knowledge about coding to get a personal website started in less than an hour. 
-We will teaching the basics of HTML and CSS, using the compiler Cloud9.
+We will be teaching the basics of HTML and CSS, using the compiler atom.
 
 
 
-### Step 1: Setting up Cloud9
-Before we begin coding, you must set up text editor. We recommend using atom, which you can download here: https://atom.io/
+### Step 1: Setting up Atom
+Before we begin coding, you must set up a text editor. We recommend using atom, which you can download here: https://atom.io/
 
+After the application is downloaded, go to your desktop and create a new folder.  This is done by right clicking your desktop and clicking “create new folder.”
+
+Open atom.io and go to “open projects.”  Select the folder you just created on your desktop
+
+Now locate this folder on atom.io and right click.  Select “new file”
+
+Write index.html in the blank! You are now ready to begin coding
 
 
 ### Step 2: Setting up the HTML File 
-
-Start by creating a new file. Name it index.html. 
 
 Create the backbone of HTML file by typing the following:
 
@@ -33,21 +38,20 @@ Make sure to save as you go along by clicking `file` and `save` or use the short
 You can preview the page by clicking `Preview` on the top bar and then selecting `Live Preview File`.
 
 #### Side note: Comments
-Comments can be made in HTML by using `<!--` and `-->`. Text inside these arrows are not dispalyed in 
-the browser, but helps document your HTML code. It is a good habit to always comment your code.
+Comments can be made in HTML by using `<!--` and `-->`. Text inside these arrows are not displayed in 
+the browser, but helps document your HTML code. It is a good habit to always comment on your code.
 
 ```html
 <!-- This is a comment-->
 ```
 
 #### Side note 2: Live Preview
-You can preview the code as you work by opening up Live Preview. To do this, click on the `Preview` button
-on the top bar of Cloud9. Then select `Live Preview`.
+You can preview the code as you work by opening up your folder. To do this, double-click on the file in your desktop folder.
 
 ### Step 3: Adding Text
 
 Now you can add some text to your webpage. HTML uses a variety of elements to automatically format 
-and identify text. There are mutlipe heading elements (`<h1>`, `<h2>`, `<h3>`, ..., `<h6>`) that create headers,
+and identify text. There are multiple heading elements (`<h1>`, `<h2>`, `<h3>`, ..., `<h6>`) that create headers,
 and there is also a paragraph element (`<p>`) to create paragraph text. 
 
 Text is written inside the body and must be enclosed by a starting (ex: `<p>`) and ending tag (ex: `</p>`). 
@@ -60,28 +64,28 @@ Try this! An example is shown below.
     </head>
     <body>
         <h1>Roslyn Code Club</h1> <!--Heading 1-->
-        <h2>by Jeffrey Yu</h2> <!--Heading 2-->
+        <h2>by Grace Peng</h2> <!--Heading 2-->
         <p>We are the Roslyn Code Club</p> <!--paragraph-->
     </body>
 </html>
 ```
+
 
 ### Step 4: Adding Photos
 
 You can add a photo by using the `<img>` tag. In this tag, you use attributes to control how the tag behaves. 
 
 
-The attribute `srs` specifies the source of the image. This can be a URL or a file path. 
-
+The attribute `src` specifies the source of the image. This can be a URL or a file path. 
 
 The attribute `alt` is used as an alternative if the image can not load for whatever reason, usually named 
-whatever the image is suppose to be. 
+whatever the image is supposed to be. 
 
 The attribute `title` is the title of the image and is displayed as a tooltip when you mouse over the image.
 This attribute can be used with different elements, too, such as `<p>`.
 
-Try adding an image yourself! Google an image and copy it's sourse URL (done by right clicking and selecting 
-`Copy Image Address`) An example is show below:
+Try adding an image yourself! Create an images folder in your project. Google an image and download it. 
+Make sure to place it in the image folder. Right click on the file and click copy project path. Then paste the path in the src attribute.
 
 ```html
 <!DOCTYPE html>
@@ -91,7 +95,7 @@ Try adding an image yourself! Google an image and copy it's sourse URL (done by 
     <body>
         <img src="cody1.PNG" alt="cody" title="Cody the Code Club Code Cub"> <!--Image-->
         <h1>Roslyn Code Club</h1> 
-        <h2>by Jeffrey Yu</h2>
+        <h2>by Grace Peng</h2>
         <p>We are the Roslyn Code Club</p> 
     </body>
 </html>
@@ -101,7 +105,7 @@ Try adding an image yourself! Google an image and copy it's sourse URL (done by 
 
 Lists are just another text element. There are two types of lists: ordered and unordered.
 
-Lets start with an unordered list. The unordered list  tag is `<ul>`. 
+Let's start with an unordered list. The unordered list  tag is `<ul>`. 
 Then each list item must have the tag `<li>`. List items are displayed as bullet points.
 Try this yourself! An example is shown below.
 
@@ -113,7 +117,7 @@ Try this yourself! An example is shown below.
     <body>
         <img src="cody1.PNG" alt="cody" title="Cody the Code Club Code Cub">
         <h1>Roslyn Code Club</h1>
-        <h2>by Jeffrey Yu</h2>
+        <h2>by Grace Peng</h2>
         <p>We are the Roslyn Code Club</p>
         <h3>What we Do</h3>
         <!-- Unordered List-->
@@ -137,7 +141,7 @@ follows the same rules as unordered lists. Try this yourself! An example is show
     <body>
         <img src="cody1.PNG" alt="cody" title="Cody the Code Club Code Cub">
         <h1>Roslyn Code Club</h1>
-        <h2>by Jeffrey Yu</h2>
+        <h2>by Grace Peng</h2>
         <p>We are the Roslyn Code Club</p>
         <h3>What we Do</h3>
         <ul>
@@ -167,7 +171,7 @@ The HTML `<b>` element defines <b>bold</b> text, without any extra importance.
 The HTML `<i>` element defines <i>italic</i> text, without any extra importance.
 <br>The HTML `<em>` element defines <em>emphasized</em> text, with added semantic importance.
 
-he HTML `<small>` element defines <small>smaller</small> text.
+The HTML `<small>` element defines <small>smaller</small> text.
 
 The HTML `<mark>` element defines <mark>marked</mark> or <mark>highlighted</mark> text.
 
@@ -184,7 +188,7 @@ Now you try! An example is below:
     <body>
         <img src="cody1.PNG" alt="cody" title="Cody the Code Club Code Cub">
         <h1>Roslyn Code Club</h1>
-        <h2>by Jeffrey Yu</h2>
+        <h2>by Grace Peng</h2>
         <p>We are the <u>Roslyn Code Club</u></p>  <!-- Underlined "Roslyn Code Club" -->
         <h3>What we Do</h3>
         <ul>
@@ -229,7 +233,7 @@ An example is shown below:
     <body>
       <img src="cody1.PNG" alt="cody" title="Cody the Code Club Code Cub">
         <h1>Roslyn Code Club</h1>
-        <h2>by Jeffrey Yu</h2>
+        <h2>by Grace Peng</h2>
         <p>We are the <u>Roslyn Code Club</u></p>
         <h3>What we Do</h3>
         <ul>
@@ -248,9 +252,9 @@ An example is shown below:
 ```
 
 
-### Step 8: Adding Styles to CSS
+### Step 8 Adding Styles to CSS
 
-Now open up the CSS file and lets get styling. CSS works by having a selector, often an element, 
+Now open up the CSS file and let's get styling. CSS works by having a selector, often an element, 
 and defining rules for it in `{` `}` brackets.
 
 To resize all images on a webpage, select the element `img` and set the `width` to the desired `px`.
@@ -291,7 +295,7 @@ ol{
 
 ### Step 9: Using `<div>` with CSS
 
-Now if you want to change blocks of code withint the body, but they are not all contained within one element,
+Now if you want to change blocks of code within the body, but they are not all contained within one element,
 you can select them by putting them inside a `<div>` element with a `class` or `id` attribute. 
 The `<div>` element allows you to define a section of code without affecting the HTML.
 
@@ -308,7 +312,7 @@ code would be:
       <img src="cody1.PNG" alt="cody" title="Cody the Code Club Code Cub">
       <div id="content"> <!-- Opening <div> tag-->
         <h1>Roslyn Code Club</h1>
-        <h2>by Jeffrey Yu</h2>
+        <h2>by Grace Peng</h2>
         <p>We are the <u>Roslyn Code Club</u></p>
         <h3>What we Do</h3>
         <ul>
@@ -356,7 +360,7 @@ They could be used with most elements. An example of this would be:
       <img src="cody1.PNG" alt="cody" title="Cody the Code Club Code Cub">
       <div id="content">
         <h1>Roslyn Code Club</h1>
-        <h2>by Jeffrey Yu</h2>
+        <h2>by Grace Peng</h2>
         <p class="quote">Don't know how to code? It's ok, neither do we.</p> <!-- Adding an id named quote -->
         <p>We are the <u>Roslyn Code Club</u></p>
         <h3>What we Do</h3>
@@ -384,7 +388,7 @@ And then can be used in the CSS file the same way as a `<div>` element. An examp
 ```
 
 ### Step 11: Making a footer
-The last touch you can add to your website is adding a profesional looking footer. You
+The last touch you can add to your website is adding a professional looking footer. You
 can do this by simply adding a `<p>` element enclosed by `<div>` tags, with `id="footer"`.
 The code may look something like this:
 
@@ -400,7 +404,7 @@ The code may look something like this:
       <img src="cody1.PNG" alt="cody" title="Cody the Code Club Code Cub">
       <div id="content">
         <h1>Roslyn Code Club</h1>
-        <h2>by Jeffrey Yu</h2>
+        <h2>by Grace Peng</h2>
         <p class="quote">Don't know how to code? It's ok, neither do we.</p>
         <p>We are the <u>Roslyn Code Club</u></p>
         <h3>What we Do</h3>
@@ -417,7 +421,7 @@ The code may look something like this:
         </ol>
       </div>
       <div id="footer"> <!-- Footer -->
-        <p>Created by <i>Jeffrey Yu</i></p>
+        <p>Created by <i>Grace Peng</i></p>
       </div>
       
     </body>
@@ -425,7 +429,7 @@ The code may look something like this:
 ```
 
 In the CSS file you can add a border. In addition, when selecting a `id` or `class`, you 
-can specify an element within them by by adding a space and the elment name. Your CSS made end up 
+can specify an element within them by adding a space and the element name. Your CSS made end up 
 looking something like this:
 
 ```css
@@ -443,7 +447,7 @@ looking something like this:
 
 ## Congratulations!!!
 You have now finished making your own personal website! Now go back and add things, change things, and just play
-around. If you want to do something you don't know how to, don't be afraid of Google!
+around. If you want to do something you don't know how to, don't be afraid of Google!  Next week we’ll be working on animations through the use of CSS!
 
 Your finished code may look something like this:
 
@@ -461,7 +465,7 @@ Your finished code may look something like this:
       
       <div id="content">
         <h1>Roslyn Code Club</h1>
-        <h2>by Jeffrey Yu</h2>
+        <h2>by Grace Peng</h2>
         <p class="quote">Don't know how to code? It's ok, neither do we.</p>
         <p>We are the <u>Roslyn Code Club</u></p>
         <h3>What we Do</h3>
@@ -479,7 +483,7 @@ Your finished code may look something like this:
       </div>
       
       <div id="footer">
-        <p>Created by <i>Jeffrey Yu</i></p>
+        <p>Created by <i>Grace Peng</i></p>
       </div>
       
     </body>
@@ -530,3 +534,4 @@ ol{
   color: white;
 }
 ```
+
