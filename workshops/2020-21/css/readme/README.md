@@ -63,9 +63,9 @@ Try this! An example is shown below.
     <head>
     </head>
     <body>
-        <h1>Roslyn Code Club</h1> <!--Heading 1-->
-        <h2>by Grace Peng</h2> <!--Heading 2-->
-        <p>We are the Roslyn Code Club</p> <!--paragraph-->
+        <h1>JoJo Siwa’s Website</h1> <!--Heading 1-->
+        <h2>by JoJo Siwa</h2> <!--Heading 2-->
+        <p>I love bows!</p> <!--paragraph-->
     </body>
 </html>
 ```
@@ -74,7 +74,6 @@ Try this! An example is shown below.
 ### Step 4: Adding Photos
 
 You can add a photo by using the `<img>` tag. In this tag, you use attributes to control how the tag behaves. 
-
 
 The attribute `src` specifies the source of the image. This can be a URL or a file path. 
 
@@ -93,10 +92,10 @@ Make sure to place it in the image folder. Right click on the file and click cop
     <head>
     </head>
     <body>
-        <img src="cody1.PNG" alt="cody" title="Cody the Code Club Code Cub"> <!--Image-->
-        <h1>Roslyn Code Club</h1> 
-        <h2>by Grace Peng</h2>
-        <p>We are the Roslyn Code Club</p> 
+        <img src="images\Jojo.png" alt="Jojo" title="Jojo Siwa"> <!--Image-->
+        <h1>JoJo Siwa’s Website</h1> 
+        <h2>by JoJo Siwa</h2>
+        <p>I love bows</p> 
     </body>
 </html>
 ```
@@ -115,16 +114,16 @@ Try this yourself! An example is shown below.
     <head>
     </head>
     <body>
-        <img src="cody1.PNG" alt="cody" title="Cody the Code Club Code Cub">
-        <h1>Roslyn Code Club</h1>
-        <h2>by Grace Peng</h2>
-        <p>We are the Roslyn Code Club</p>
-        <h3>What we Do</h3>
+        <img src="images\Jojo.png" alt="Jojo" title="Jojo Siwa"> 
+        <h1>Jojo Siwa’s Website</h1>
+        <h2>by JoJo Siwa</h2>
+        <p>I love bows</p>
+        <h3>LIVING MY BEST LIFE</h3>
         <!-- Unordered List-->
         <ul>
-          <li>Weekly Meetings</li>
-          <li>Bryant Library Workshops</li>
-          <li>Computer Science Competitions</li>
+          <li>Unicorns</li>
+          <li>Sparkles</li>
+          <li>Rainbows</li>
         </ul>
     </body>
 </html>
@@ -139,22 +138,22 @@ follows the same rules as unordered lists. Try this yourself! An example is show
     <head>
     </head>
     <body>
-        <img src="cody1.PNG" alt="cody" title="Cody the Code Club Code Cub">
-        <h1>Roslyn Code Club</h1>
-        <h2>by Grace Peng</h2>
-        <p>We are the Roslyn Code Club</p>
-        <h3>What we Do</h3>
+        <img src="images\Jojo.png" alt="Jojo" title="Jojo Siwa"> 
+        <h1>JoJo Siwa’s Website</h1>
+        <h2>by JoJo Siwa</h2>
+        <p>I love bows</p>
+        <h3>LIVING MY BEST LIFE</h3>
         <ul>
-          <li>Weekly Meetings</li>
-          <li>Bryant Library Workshops</li>
-          <li>Computer Science Competitions</li>
+          <li>Unicorns</li>
+          <li>Sparkles</li>
+          <li>Rainbows</li>
         </ul>
-        <h3>Workshops</h3>
+        <h3>My Recent Work</h3>
         <!--Ordered List-->
         <ol>
-          <li>Personal Website</li>
-          <li>Navigation Bar</li>
-          <li>Tags and Embedding</li>
+          <li>D.R.E.A.M. the Tour</li>
+          <li>Celebrity Watch Party on Fox</li>
+          <li>NONSTOP Official Music Video</li>
         </ol>
     </body>
 </html>
@@ -186,21 +185,21 @@ Now you try! An example is below:
     <head>
     </head>
     <body>
-        <img src="cody1.PNG" alt="cody" title="Cody the Code Club Code Cub">
-        <h1>Roslyn Code Club</h1>
-        <h2>by Grace Peng</h2>
-        <p>We are the <u>Roslyn Code Club</u></p>  <!-- Underlined "Roslyn Code Club" -->
-        <h3>What we Do</h3>
+        <img src="images\Jojo.png" alt="Jojo" title="Jojo Siwa"> 
+        <h1>JoJo Siwa’s Website</h1>
+        <h2>by JoJo Siwa</h2>
+        <p>I love<u>Justice!</u></p>  <!-- Underlined "JoJo Siwa’s Website" -->
+        <h3>LIVING MY BEST LIFE</h3>
         <ul>
-          <li>Weekly Meetings</li>
-          <li>Bryant Library Workshops</li>
-          <li>Computer Science Competitions</li>
+          <li>Unicorns</li>
+          <li>Sparkles</li>
+          <li>Rainbows</li>
         </ul>
-        <h3>Workshops</h3>
+        <h3>My Recent Work</h3>
         <ol>
-          <li>Personal Website</li>
-          <li>Navigation Bar</li>
-          <li>Tags and Embedding</li>
+          <li>D.R.E.A.M. the Tour</li>
+          <li>Celebrity Watch Party on Fox</li>
+          <li>NONSTOP Official Music Video</li>
         </ol>
     </body>
 </html>
@@ -231,21 +230,21 @@ An example is shown below:
       <link rel="stylesheet" href="styles.css"/> <!--Link the CSS file-->
     </head>
     <body>
-      <img src="cody1.PNG" alt="cody" title="Cody the Code Club Code Cub">
-        <h1>Roslyn Code Club</h1>
-        <h2>by Grace Peng</h2>
-        <p>We are the <u>Roslyn Code Club</u></p>
-        <h3>What we Do</h3>
+      <img src="images\Jojo.png" alt="Jojo" title="Jojo Siwa"> 
+        <h1>JoJo Siwa’s Website</h1>
+        <h2>by JoJo Siwa</h2>
+        <p>I love<u>Justice!</u></p>
+        <h3>LIVING MY BEST LIFE</h3>
         <ul>
-          <li>Weekly Meetings</li>
-          <li>Bryant Library Workshops</li>
-          <li>Computer Science Competitions</li>
+          <li>Unicorns</li>
+          <li>Sparkles</li>
+          <li>Rainbows</li>
         </ul>
-        <h3>Workshops</h3>
+        <h3>My Recent Work</h3>
         <ol>
-          <li>Personal Website</li>
-          <li>Navigation Bar</li>
-          <li>Tags and Embedding</li>
+          <li>D.R.E.A.M. the Tour</li>
+          <li>Celebrity Watch Party on Fox</li>
+          <li>NONSTOP Official Music Video</li>
         </ol>
     </body>
 </html>
@@ -275,7 +274,7 @@ body {
     text-align: center;
     font-family: Helvetica;
     background-color:#809fff;
-    color: black;
+    color: pink;
     margin: 20px;
 }
 ```
@@ -309,22 +308,22 @@ code would be:
       <link rel="stylesheet" href="styles.css"/> 
     </head>
     <body>
-      <img src="cody1.PNG" alt="cody" title="Cody the Code Club Code Cub">
+      <img src="images\Jojo.png" alt="Jojo" title="Jojo Siwa"> 
       <div id="content"> <!-- Opening <div> tag-->
-        <h1>Roslyn Code Club</h1>
-        <h2>by Grace Peng</h2>
-        <p>We are the <u>Roslyn Code Club</u></p>
-        <h3>What we Do</h3>
+        <h1>JoJo Siwa’s Website</h1>
+        <h2>by JoJo Siwa</h2>
+        <p>I love<u>Justice!</u></p>
+        <h3>LIVING MY BEST LIFE</h3>
         <ul>
-          <li>Weekly Meetings</li>
-          <li>Bryant Library Workshops</li>
-          <li>Computer Science Competitions</li>
+          <li>Unicorns</li>
+          <li>Sparkles</li>
+          <li>Rainbows</li>
         </ul>
-        <h3>Workshops</h3>
+        <h3>My Recent Work</h3>
         <ol>
-          <li>Personal Website</li>
-          <li>Navigation Bar</li>
-          <li>Tags and Embedding</li>
+          <li>D.R.E.A.M. the Tour</li>
+          <li>Celebrity Watch Party on Fox</li>
+          <li>NONSTOP Official Music Video</li>
         </ol>
       </div> <!-- Closing <div> tag-->
     </body>
@@ -357,23 +356,23 @@ They could be used with most elements. An example of this would be:
     </head>
     
     <body>
-      <img src="cody1.PNG" alt="cody" title="Cody the Code Club Code Cub">
+      <img src="images\Jojo.png" alt="Jojo" title="Jojo Siwa"> 
       <div id="content">
-        <h1>Roslyn Code Club</h1>
-        <h2>by Grace Peng</h2>
-        <p class="quote">Don't know how to code? It's ok, neither do we.</p> <!-- Adding an id named quote -->
-        <p>We are the <u>Roslyn Code Club</u></p>
-        <h3>What we Do</h3>
+        <h1>JoJo Siwa’s Website</h1>
+        <h2>by JoJo Siwa</h2>
+        <p class="quote">Imma come back like a boomerang!</p> <!-- Adding an id named quote -->
+        <p>I love<u> Justice!</u></p>
+        <h3>LIVING MY BEST LIFE</h3>
         <ul>
-          <li>Weekly Meetings</li>
-          <li>Bryant Library Workshops</li>
-          <li>Computer Science Competitions</li>
+          <li>Unicorns</li>
+          <li>Sparkles</li>
+          <li>Rainbows</li>
         </ul>
-        <h3>Workshops</h3>
+        <h3>My Recent Work</h3>
         <ol>
-          <li>Personal Website</li>
-          <li>Navigation Bar</li>
-          <li>Tags and Embedding</li>
+          <li>D.R.E.A.M. the Tour</li>
+          <li>Celebrity Watch Party on Fox</li>
+          <li>NONSTOP Official Music Video</li>
         </ol>
       </div>
     </body>
@@ -401,27 +400,27 @@ The code may look something like this:
     </head>
     
     <body>
-      <img src="cody1.PNG" alt="cody" title="Cody the Code Club Code Cub">
+      <img src="images\Jojo.png" alt="Jojo" title="Jojo Siwa"> 
       <div id="content">
-        <h1>Roslyn Code Club</h1>
-        <h2>by Grace Peng</h2>
-        <p class="quote">Don't know how to code? It's ok, neither do we.</p>
-        <p>We are the <u>Roslyn Code Club</u></p>
-        <h3>What we Do</h3>
+        <h1>JoJo Siwa’s Website</h1>
+        <h2>by JoJo Siwa</h2>
+        <p class="quote">Imma come back like a boomerang!</p>
+        <p>I love <u>Justice!</u></p>
+        <h3>LIVING MY BEST LIFE</h3>
         <ul>
-          <li>Weekly Meetings</li>
-          <li>Bryant Library Workshops</li>
-          <li>Computer Science Competitions</li>
+          <li>Unicorns</li>
+          <li>Sparkles</li>
+          <li>Rainbows</li>
         </ul>
-        <h3>Workshops</h3>
+        <h3>My Recent Work</h3>
         <ol>
-          <li>Personal Website</li>
-          <li>Navigation Bar</li>
-          <li>Tags and Embedding</li>
+          <li>D.R.E.A.M. the Tour</li>
+          <li>Celebrity Watch Party on Fox</li>
+          <li>NONSTOP Official Music Video</li>
         </ol>
       </div>
       <div id="footer"> <!-- Footer -->
-        <p>Created by <i>Grace Peng</i></p>
+        <p>Created by <i>Grace and Ashley</i></p>
       </div>
       
     </body>
@@ -461,29 +460,29 @@ Your finished code may look something like this:
     </head>
     
     <body>
-      <img src="cody1.PNG" alt="cody" title="Cody the Code Club Code Cub">
+      <img src="images\Jojo.png" alt="Jojo" title="Jojo Siwa"> 
       
       <div id="content">
-        <h1>Roslyn Code Club</h1>
-        <h2>by Grace Peng</h2>
-        <p class="quote">Don't know how to code? It's ok, neither do we.</p>
-        <p>We are the <u>Roslyn Code Club</u></p>
-        <h3>What we Do</h3>
+        <h1>JoJo Siwa’s Website</h1>
+        <h2>by JoJo Siwa</h2>
+        <p class="quote">Imma come back like a boomerang!</p>
+        <p>I love<u> Justice!</u></p>
+        <h3>LIVING MY BEST LIFE</h3>
         <ul>
-          <li>Weekly Meetings</li>
-          <li>Bryant Library Workshops</li>
-          <li>Computer Science Competitions</li>
+          <li>Unicorns</li>
+          <li>Sparkles</li>
+          <li>Rainbows</li>
         </ul>
-        <h3>Workshops</h3>
+        <h3>My Recent Work</h3>
         <ol>
-          <li>Personal Website</li>
-          <li>Navigation Bar</li>
-          <li>Tags and Embedding</li>
+          <li>D.R.E.A.M. the Tour</li>
+          <li>Celebrity Watch Party on Fox</li>
+          <li>NONSTOP Official Music Video</li>
         </ol>
       </div>
       
       <div id="footer">
-        <p>Created by <i>Grace Peng</i></p>
+        <p>Created by <i>Grace and Ashley</i></p>
       </div>
       
     </body>
@@ -493,21 +492,21 @@ Your finished code may look something like this:
 ### CSS File
 ```css
 img {
-    width: 500px;
+    width: 350px;
     margin: 8px;
 }
 
 body {
     text-align: center;
     font-family: Helvetica;
-    background-color:#809fff;
-    color: black;
+    background-color:#b19cd9;
+    color: white;
     margin: 20px;
 }
 
 #content{
   margin: 30px 0;
-  background: white;
+  background: pink;
   padding: 10px
 }
 
