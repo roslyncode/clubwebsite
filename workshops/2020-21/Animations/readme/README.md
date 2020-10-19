@@ -36,7 +36,7 @@ Then, create the classes for the runner and the road inside the body. Type ```<d
 
 Go on google and search for a sprite sheet (must be horizontal with a transparent background).  Then save the png into your project folder under the name sprite_sheet
 
-Click [here] for an example(https://www.spriteland.com/sprites/downloads/hobbit-style-sprite-sheet-walk-left.png)
+Click [here](https://www.spriteland.com/sprites/downloads/hobbit-style-sprite-sheet-walk-left.png) for an example
 
 
 ### Step 3: Linking to the other pages
@@ -45,19 +45,19 @@ Now you can begin coding css! In order to modify the classes you created previou
 
 You then must address the photo you selected, so write background:url(“sprite_sheet.png”); 
 To declare the width for each character, take the width of the image and divide by the number of characters you have.  Our sprite image was 1536 px so divided by the 6 characters, the width would equal 256 px:
-‘’’width: 256px;’’’
+```width: 256px;```
 
 Use the same height as the height of your selected image:
-‘’’height: 256px;’’’
+```height: 256px;```
 
 Then to incorporate the actual animation, write
- ‘’’-webkit-animation: walking .5s steps(6) infinite, 
-                                  forward 3s linear infinite;’’’ 
+ ```-webkit-animation: walking .5s steps(6) infinite, 
+                                  forward 3s linear infinite;```
 
 The speed is currently set to .5s.  If you want to make it go faster, lower the seconds and if you want to make it go slower, increase the seconds.  Because we used 6 characters, we put 6 in the parentheses but if you have 4 for example, you would put 4.  
 
 All together it should look like:
-‘’’
+```
 .runner{
   background:url("sprite_sheet.png");
   width: 256px; /*depends on your image*/
@@ -65,7 +65,7 @@ All together it should look like:
   -webkit-animation: walking .5s steps(6) infinite, /*cycle through images*/
                       forward 3s linear infinite; /*move to the right*/
 }
-‘’’
+```
 
 
 
@@ -90,29 +90,29 @@ The current state of the ```CharacterWalkingAnimation.css``` should be:
 }
 ```
 
-### Step 5: keyframes walking
+### Step 5: Using keyframes to cycle through images
 You want to initiate the keyframes by first writing
-    ‘’’@-webkit-keyframes walking{‘’’
+    ```@-webkit-keyframes walking{```
 
 Then to initiate your starting position you write
-    ‘’’0%{‘’’
+    ```0%{```
 
 If you want to go from the left to the write, you will begin your position at 0px 
-    ‘’’background-position: 0px
-    }’’’
+    ```background-position: 0px
+    }```
 
 Then when your character is at its final position it as at 100% so simply write
-    ‘’’100%{‘’’
+    ```100%{```
 
 Then you want to put the final position of your character, which is the total length of the image (ours was 1536px).  If you are going from left to right instead, here you will want to write 0px
-    ‘’’Background-position: 1536px;’’’
+    ```Background-position: 1536px;```
 
 
 
 
 
 All together it should look like:
-‘’’
+```
 @-webkit-keyframes walking {
   0%{
     background-position: 0px
@@ -121,7 +121,7 @@ All together it should look like:
     background-position: 1536px; /*depending on your image*/
   }
 }
-‘’’
+```
 
 
 
@@ -132,7 +132,8 @@ To move the character forward, you will use the transform property in css. Creat
 
 Next, define the keyframes as 0% and 100%. 
 
-```0%{
+```
+0%{
     
   }
   100%{
@@ -154,3 +155,6 @@ Now, use translateX to specify the ending position, when the 100% keyframe is re
 ```
 ### Step 7 
 Now you are done with the code! Make sure you save it and go back into your program folder to run it.  
+
+
+
