@@ -51,13 +51,12 @@ Use the same height as the height of your selected image:
 ```height: 256px;```
 
 Then to incorporate the actual animation, write
- ```-webkit-animation: walking .5s steps(6) infinite, 
-                                  forward 3s linear infinite;```
+ ```-webkit-animation: walking .5s steps(6) infinite, forward 3s linear infinite;```
 
 The speed is currently set to .5s.  If you want to make it go faster, lower the seconds and if you want to make it go slower, increase the seconds.  Because we used 6 characters, we put 6 in the parentheses but if you have 4 for example, you would put 4.  
 
 All together it should look like:
-```
+```css
 .runner{
   background:url("sprite_sheet.png");
   width: 256px; /*depends on your image*/
