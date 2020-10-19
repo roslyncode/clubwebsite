@@ -54,7 +54,7 @@ Then to incorporate the actual animation, write
  ‘’’-webkit-animation: walking .5s steps(6) infinite, 
                                   forward 3s linear infinite;’’’ 
 
-The speed is currently set to .5s.  If you want to make it go faster, Because we used 6 characters we put 6 in the parentheses but if you have 4 for example, you would put 4.  
+The speed is currently set to .5s.  If you want to make it go faster, lower the seconds and if you want to make it go slower, increase the seconds.  Because we used 6 characters, we put 6 in the parentheses but if you have 4 for example, you would put 4.  
 
 All together it should look like:
 ‘’’
@@ -154,4 +154,3 @@ Now, use translateX to specify the ending position, when the 100% keyframe is re
 ```
 ### Step 7 
 Now you are done with the code! Make sure you save it and go back into your program folder to run it.  
-
