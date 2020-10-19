@@ -153,7 +153,7 @@ Now, use translateX to specify the ending position, when the 100% keyframe is re
 }
 ```
 ### Step 7 
-Now you are done with the code! Make sure you save it and go back into your program folder to run it.  
+Now you are done with the code! Make sure you save it and go back into your program folder to run it.  You can change the colors and change the speed of the animation. Also, you can try to change the background using the workshop from last week.
 
 
 
