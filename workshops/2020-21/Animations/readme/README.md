@@ -111,7 +111,7 @@ Then you want to put the final position of your character, which is the total le
 
 
 All together it should look like:
-```
+```css
 @-webkit-keyframes walking {
   0%{
     background-position: 0px
@@ -131,7 +131,7 @@ To move the character forward, you will use the transform property in css. Creat
 
 Next, define the keyframes as 0% and 100%. 
 
-```
+```css
 0%{
     
   }
