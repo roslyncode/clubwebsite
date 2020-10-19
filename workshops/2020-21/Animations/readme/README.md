@@ -39,7 +39,7 @@ Go on google and search for a sprite sheet (must be horizontal with a transparen
 Click [here](https://www.spriteland.com/sprites/downloads/hobbit-style-sprite-sheet-walk-left.png) for an example
 
 
-### Step 3: Linking to the other pages
+### Step 3: Writing the Runner
 
 Now you can begin coding css! In order to modify the classes you created previously, you will want to start off by writing   .runner{
 
