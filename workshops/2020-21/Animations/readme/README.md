@@ -1,4 +1,4 @@
-# Character Animation
+# Workshop 2: Character Animation
 
 
 ### Step 1: Setting up the files
