@@ -7,14 +7,14 @@ Today we will also be incorporating java script for the first time!
 
 To start, create three files: ```index.html```  ```snake_game.css``` ```snake_game.js```
 
-Next, open the ```index.html``` file. First, we will declare a doctype. We’re using html as our coding language, so we will type 
+Next, open the ```index.html``` file. First, we will declare a doctype. We’re using html as our coding language, so we will type
 ```html
 <!DOCTYPE HTML>
 ```
 
 Now, we will create the shell of the webpage. Start with the ```<html>``` tag. And then declare a ```<head>``` tag as your next line
 
-Within the head tag, declare the title as 
+Within the head tag, declare the title as
 ```html
 <title>Snake v8</title>
 ```
@@ -30,7 +30,7 @@ Then, end the head tag
 
 Next you have to work on developing your body tag ```<body>```
 
-Under the name body, start a div tag and name it gameContainer to name the main game board: 
+Under the name body, start a div tag and name it gameContainer to name the main game board:
 
     ```html
 <div id=”gameContainer”></div>
@@ -55,7 +55,7 @@ We’ll use css to style the gameboard, snake and food.
 
 To style the gameboard, create a grid of 40x40 game pixels
 
-Play around to create different themes 
+Play around to create different themes
 
 ```css
 body {
@@ -273,12 +273,16 @@ If you finished coding and want to advance your code, add a score board and coun
 
 Begin in your html under the scoreContainer div tag
 
-Declare the div id by naming it scoreContainer: 
-    ```html <div id = “scoreContainer”>```
+Declare the div id by naming it scoreContainer:
+```html 
+<div id = “scoreContainer”>
+```
 
 Within this div tag, you need to define one class to count the score (food collected) and one to count the blocks:
-    ```html <div class="scoreBoard">Food: <span id="pointsEarned">0</span></div>
-              <div class="scoreBoard">Blocks: <span id="blocksTravelled">0</span></div>```
+```html 
+<div class="scoreBoard">Food: <span id="pointsEarned">0</span></div>
+              <div class="scoreBoard">Blocks: <span id="blocksTravelled">0</span></div>
+```
 
 The end the div tag for scoreContainer ```</div>```
 
@@ -326,9 +330,9 @@ let totalDistanceTravelled = 0;
 
 
 
-Next, scroll down to the if statement checking if currentSnakeHeadPosition is equal to the currentFoodPosition.  Before you increase the snake length, update the total food eaten 
+Next, scroll down to the if statement checking if currentSnakeHeadPosition is equal to the currentFoodPosition.  Before you increase the snake length, update the total food eaten
 
-After setTimeout((), make these modifications to your code in order to track the distance travelled and score of your snake: 
+After setTimeout((), make these modifications to your code in order to track the distance travelled and score of your snake:
 ```js
 totalDistanceTravelled++;
   // Update in UI:
@@ -345,6 +349,9 @@ totalDistanceTravelled++;
     createFood();
   }
 ```
+
+
+
 
 
 
