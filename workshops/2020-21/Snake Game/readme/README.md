@@ -325,9 +325,10 @@ This section of code should read as:
 
 In the javascript portion, first declare variables at the top of your screen and initialize them both by setting them both equal to 0:
 
+```js
 let totalFoodAte = 0;
 let totalDistanceTravelled = 0;
-
+```
 
 
 Next, scroll down to the if statement checking if currentSnakeHeadPosition is equal to the currentFoodPosition.  Before you increase the snake length, update the total food eaten
@@ -338,7 +339,7 @@ totalDistanceTravelled++;
   // Update in UI:
   document.getElementById("blocksTravelled").innerHTML = totalDistanceTravelled;
 
-  if (currentSnakeHeadPosition == currentFoodPostion) {
+  if (currentSnakeHeadPosition == currentFoodPosition) {
     // Update total food ate
     totalFoodAte++;
     // Update in UI:
@@ -349,14 +350,4 @@ totalDistanceTravelled++;
     createFood();
   }
 ```
-
-
-
-
-
-
-
-
-
-
 
