@@ -7,11 +7,17 @@ Today we will also be incorporating java script for the first time!
 
 To start, create three files: ```index.html```  ```snake_game.css``` ```snake_game.js```
 
-Next, open the ```index.html``` file. First, we will declare a doctype. We’re using html as our coding language, so we will type ```html<!DOCTYPE HTML>```.
+Next, open the ```index.html``` file. First, we will declare a doctype. We’re using html as our coding language, so we will type 
+```html
+<!DOCTYPE HTML>
+```
 
 Now, we will create the shell of the webpage. Start with the ```<html>``` tag. And then declare a ```<head>``` tag as your next line
 
-Within the head tag, declare the title as ```html<title>Snake v8</title>```
+Within the head tag, declare the title as 
+```html
+<title>Snake v8</title>
+```
 
 Then, you are going to link the styles to the css section of your code which you will later be writing
 To do so, write:
@@ -27,14 +33,16 @@ Next you have to work on developing your body tag ```<body>```
 Under the name body, start a div tag and name it gameContainer to name the main game board: 
 
     ```html
-<div id=”gameContainer”></div>```
+<div id=”gameContainer”></div>
+```
 
 Then end the body tag in the next line by typing ```</body>```
 
 Then link this code to the javascript file by writing:
     
     ```html
-<script src="snake_game.js"></script>```
+<script src="snake_game.js"></script>
+```
 
 Lastly end the html tag by writing ```</html>``` and the html portion of your code is now complete!
 
