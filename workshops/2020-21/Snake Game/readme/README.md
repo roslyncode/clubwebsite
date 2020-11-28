@@ -32,15 +32,15 @@ Next you have to work on developing your body tag ```<body>```
 
 Under the name body, start a div tag and name it gameContainer to name the main game board:
 
-    ```html
+```html
 <div id=”gameContainer”></div>
 ```
 
-Then end the body tag in the next line by typing ```</body>```
+Then end the body tag in the next line by typing </body>
 
 Then link this code to the javascript file by writing:
     
-    ```html
+```html
 <script src="snake_game.js"></script>
 ```
 
