@@ -1,7 +1,7 @@
 
 # Workshop 5: Web Scraping Store Prices
 
-We’ll be learning how to apply what we learned about Web Scraping from our last lesson in the real world! For prices on amazon (or any website of your choosing) you will use web scraping to track when an item drops down to your ideal price.  When your item’s price drops to that amount, you will receive an email. 
+We’ll be learning how to apply what we learned about Web Scraping from our last lesson in the real world! For prices on Lululemon (or any website of your choosing) you will use web scraping to track when an item drops down to your ideal price.  When your item’s price drops to that amount, you will receive an email. 
 
 ### Step 1: Setting up Repl
 Before we begin coding, you must set up a text editor. We recommend using repl.it
@@ -9,8 +9,6 @@ Before we begin coding, you must set up a text editor. We recommend using repl.i
 If you do not have an account already, register 
 
 Once you are logged in, create a new repl with the language “python”
-
-Once you are in the program, create two files. Name one of them poetry.lock and the other pyprojec.toml
 
 You are now ready to begin coding!
 
@@ -52,7 +50,6 @@ You lastly have to print the converted price in order to see the information you
 converted_price = float(price[1:4])
 print(converted_price)
 ```
-
 
 
 
