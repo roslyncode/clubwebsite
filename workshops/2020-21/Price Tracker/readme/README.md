@@ -35,8 +35,8 @@ Next, inspect your website's code by right clicking your mouse and selecting ins
 <img align="left" width="423" height="154" src="screenshot1_13(2).png">
 <br/><br/><br/>
 <img align="left" width="406" height="82" src="screenshot1_13(4).png">
-<br/><br/><br/>
-
+<br/>
+<br/>
 ### Step 4: Locating Title and Price
 Once you are inspecting your code, use the find function to locate the title and and price using the tags you found in step 3. 
 
