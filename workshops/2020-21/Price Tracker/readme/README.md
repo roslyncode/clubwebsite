@@ -30,8 +30,9 @@ soup = BeautifulSoup(page.text, 'html.parser')
 
 ### Step 3: Extracting Page Title
 Next, inspect your website's code by right clicking your mouse and selecting inspect. See which elements have the title and price because these will be the elements you target. 
-<img align="left" width="100" height="100" src="screenshot1_13(2).png">
-<img align="left" width="100" height="100" src="screenshot1_13(4).png">
+<img align="left" width="423" height="154" src="screenshot1_13(2).png">
+
+<img align="left" width="406" height="82" src="screenshot1_13(4).png">
 
 
 ### Step 4: Locating Title and Price
