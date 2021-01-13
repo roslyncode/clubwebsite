@@ -22,7 +22,7 @@ from bs4 import BeautifulSoup
 ```
 Then you can choose a website with the product to request from:
 ```python
-# Collect and parse from our club website
+# Collect and parse from lululemon website
 page = requests.get(“https://shop.lululemon.com/p/womens-outerwear/All-Yours-Crew/_/prod9370045?color=46793”) 
 soup = BeautifulSoup(page.text, 'html.parser')
 ```
@@ -37,11 +37,14 @@ Next, inspect your website's code by right clicking your mouse and selecting ins
 <img align="left" width="406" height="82" src="screenshot1_13(4).png">
 <br/>
 <br/>
+
+The title has the h1 tag with class name "pdp-title" and the price has the span tag with class name "price-1SDQy price"
+
 ### Step 4: Locating Title and Price
 Once you are inspecting your code, use the find function to locate the title and and price using the tags you found in step 3. 
 
 ```python
-result = soup.find("h1", {"class": "pdp-title"}).getText()
+title = soup.find("h1", {"class": "pdp-title"}).getText()
 price = soup.find("span",{"class": "price-1SDQy price"}).getText()
 ```
 
