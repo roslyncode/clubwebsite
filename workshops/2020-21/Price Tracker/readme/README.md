@@ -36,7 +36,6 @@ Next, inspect your website's code by right clicking your mouse and selecting ins
 <br/><br/><br/>
 <img align="left" width="406" height="82" src="screenshot1_13(4).png">
 <br/>
-<br/>
 
 The title has the h1 tag with class name "pdp-title" and the price has the span tag with class name "price-1SDQy price"
 
