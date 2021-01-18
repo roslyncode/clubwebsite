@@ -109,10 +109,12 @@ Click get started and login to enable it.
 Now, you can enable different application passwords by going to [Google App Passwords](http://myaccount.google.com/apppasswords)
 Click App Passwords
 Then, generate a new password for email on windows computer applications (select mac if you are on mac)
-![picture 1](workshops/2020-21/Price Tracker/readme/screenshot1_18.png)
-A window should pop up that looks like this: 
-![picture 2](workshops/2020-21/Price Tracker/readme/screenshot1_18(2).png)
-Save this password for the next step
+<br/>
+<img align="left" width="423" height="154" src="screenshot1_18.png">
+<br/><br/><br/>
+Then, a window should pop up with the password and make sure you save it.
+<img align="left" width="406" height="82" src="screenshot1_18(2).png">
+<br/><br/><br/>
 
 To login, use the function below to login: 
 ```python 
