@@ -111,13 +111,13 @@ Click App Passwords
 Then, generate a new password for email on windows computer applications (select mac if you are on mac)
 <br/>
 
-<img align="left" width="700" height="380" src="screenshot1_18.png">
+<img width="700" height="380" src="screenshot1_18.png">
 
 <br/><br/><br/>
 
 Then, a window should pop up with the password and make sure you save it.
 
-<img align="left" width="430" height="348" src="screenshot1_18(2).png">
+<img width="430" height="348" src="screenshot1_18(2).png">
 
 <br/>
 
