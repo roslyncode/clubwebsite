@@ -99,10 +99,81 @@ print(page_title, page_head)
 first_h1 = soup.select('h1')[0].text #index 0 
 ```
 
-### CHALLENGE
-Try to extract and print out a list of the names of all the workshops on our club website
+### Step 6: Configuring the email
+First, wrap the code above inside of a function like so:
+```python 
+def check_price():
+  URL = "https://shop.lululemon.com/p/womens-outerwear/All-Yours-Crew/_/prod9370045?color=46793"
+  page = requests.get(URL)
+  soup = BeautifulSoup(page.content, 'html.parser')
+  result = soup.find("h1", {"class": "pdp-title"}).getText()
+  price = soup.find("span",{"class": "price-1SDQy price"}).getText()
+  converted_price = float(price[1:4])
+  if(converted_price < 100.00):
+	send_mail()
+    
+  print(converted_price)
+ 
+```
+Then, import the smtplib package under your previous imports (a mail protocol)
+```python
+Import smtplib
+```
+### Step 7 Writing the send mail function
+Create a ```python send_mail()``` function and add the line 
+```python server = smtplib.SMTP('smtp.gmail.com',587)```
+To establish a connection between the program and gmail servers
+Below add the line 
+```python server.ehlo```
+This is a command sent by an email server to identify itself when connecting to another email
 
-Solution will be given at the end of the meeting
+Then write 
+```python server.starttls``` to encrypt the messages
+Then call ```python server.ehlo``` one more time
+
+### Step 8 Setting up gmail
+In order for the program to send emails, enable two-step verification on your gmail account. You can do this by going [here](https://www.google.com/landing/2step/)
+Click get started and login to enable it.
+Now, you can enable different application passwords by going to [Google App Passwords](http://myaccount.google.com/apppasswords)
+Click App Passwords
+Then, generate a new password for email on windows computer applications (select mac if you are on mac)
+![](workshops/2020-21/Price Tracker/readme/screenshot1_18.png)
+A window should pop up that looks like this: 
+![](workshops/2020-21/Price Tracker/readme/screenshot1_18(2).png)
+Save this password for the next step
+
+To login, use the ```python .login()``` function to login.
+The first parameter should be your email and the second parameter should be the password that is generated from the previous step
+
+Now you want to actually set up your email
+Add the lines
+ ```python 
+subject = ‘Price fell down’
+body = ‘Check the Lululemon link https://shop.lululemon.com/p/womens-outerwear/All-Yours-Crew/_/prod9370045?color=46793’
+msg = f”Subject: {subject}\n\n{body}
+```
+The f above means you can interprelate the subject by just adding subject.  The body added after creating two new lines is to add the actual message.
+
+Lastly you want to send the actual email.  The first line must be the email must be who it is from, the second line must be the email who it is to, and then the third line will hold your actual message.  Add the line 
+```python 
+server.sendmail(
+	"example@gmail.com",
+	"exampleTwo@yahoo.com",
+	msg
+  )
+```
+Then print that the email has been sent
+```python print(‘Email has been sent!’)```
+Finally, close the server connection
+```python server.quit()```
+
+Inside of check_price(), call the send_mail() function inside of the if statement so that the email will be sent if the price drops below the threshold you set.
+
+### Additional: Check the price every x time.
+It’s not good practice to keep checking the price constantly, so make the program run check_price() once a day.
+
+Use the time package to do this.
+
 
 
 
