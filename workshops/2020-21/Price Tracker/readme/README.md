@@ -55,6 +55,7 @@ You lastly have to print the converted price in order to see the information you
 converted_price = float(price[1:4])
 print(converted_price)
 ```
+
 ### Step 6: Configuring the email
 First, wrap the code above inside of a function like so:
 ```python 
@@ -73,19 +74,34 @@ def check_price():
 ```
 Then, import the smtplib package under your previous imports (a mail protocol)
 ```python
-Import smtplib
+import smtplib
 ```
 ### Step 7 Writing the send mail function
-Create a ```python send_mail()``` function and add the line 
-```python server = smtplib.SMTP('smtp.gmail.com',587)```
+Create the function: 
+ ```python 
+send_mail()
+``` 
+And add the line:
+```python 
+server = smtplib.SMTP('smtp.gmail.com',587)
+```
 To establish a connection between the program and gmail servers
 Below add the line 
-```python server.ehlo```
+```python 
+server.ehlo
+```
 This is a command sent by an email server to identify itself when connecting to another email
 
 Then write 
-```python server.starttls``` to encrypt the messages
-Then call ```python server.ehlo``` one more time
+```python 
+server.starttls
+```
+ to encrypt the messages
+Then call 
+```python 
+server.ehlo
+``` 
+one more time
 
 ### Step 8 Setting up gmail
 In order for the program to send emails, enable two-step verification on your gmail account. You can do this by going [here](https://www.google.com/landing/2step/)
@@ -93,12 +109,15 @@ Click get started and login to enable it.
 Now, you can enable different application passwords by going to [Google App Passwords](http://myaccount.google.com/apppasswords)
 Click App Passwords
 Then, generate a new password for email on windows computer applications (select mac if you are on mac)
-![](workshops/2020-21/Price Tracker/readme/screenshot1_18.png)
+![picture 1](workshops/2020-21/Price Tracker/readme/screenshot1_18.png)
 A window should pop up that looks like this: 
-![](workshops/2020-21/Price Tracker/readme/screenshot1_18(2).png)
+![picture 2](workshops/2020-21/Price Tracker/readme/screenshot1_18(2).png)
 Save this password for the next step
 
-To login, use the ```python .login()``` function to login.
+To login, use the function below to login: 
+```python 
+.login()
+``` 
 The first parameter should be your email and the second parameter should be the password that is generated from the previous step
 
 Now you want to actually set up your email
@@ -119,9 +138,13 @@ server.sendmail(
   )
 ```
 Then print that the email has been sent
-```python print(‘Email has been sent!’)```
+```python 
+print(‘Email has been sent!’)
+```
 Finally, close the server connection
-```python server.quit()```
+```python 
+server.quit()
+```
 
 Inside of check_price(), call the send_mail() function inside of the if statement so that the email will be sent if the price drops below the threshold you set.
 
@@ -129,6 +152,4 @@ Inside of check_price(), call the send_mail() function inside of the if statemen
 It’s not good practice to keep checking the price constantly, so make the program run check_price() once a day.
 
 Use the time package to do this.
-
-
 
