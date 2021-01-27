@@ -82,7 +82,7 @@ def movie_picker():
     	print(summary)
     	if not get_user_yn("Have you already watched this movie? Enter Y or N. : "):
         	print("Enjoy the movie!")
-        	Break
+        	break
 ```
 
 
