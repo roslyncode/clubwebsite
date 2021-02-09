@@ -41,10 +41,10 @@ Afterwards, select all of the episode containers from the season’s page. As yo
 ```html
 <div class="info" ...> </div>
 ```
-<br/>
 <img width="694" height="288" src="community html image.png">
-<br/>
+
 Create and populate the episode_containers list with all of the ‘info’ containers
+
 ```python
 	episode_containers = page_html.find_all('div', class_ = 'info')
 ```
