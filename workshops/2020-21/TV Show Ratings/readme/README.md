@@ -1,7 +1,7 @@
 
 # Workshop 7: TV Show Ratings
 
-In this workshop we will be using python to scrape Episode Ratings from imdb.  We will once again be importing BeautifulSoup! The goal of this project is to get the season number, episode number, title, airdate, rating, total votes, and description for each episode in a TV Show to use for analysis in a future workshop. For this workshop, we’ll be using 
+In this workshop we will be using python to scrape Episode Ratings from imdb.  We will once again be importing BeautifulSoup! The goal of this project is to get the season number, episode number, title, airdate, rating, total votes, and description for each episode in a TV Show to use for analysis in a future workshop.
 
 ### Step 1: Set up Python File with Beautiful Soup and Requests
 Like previous workshops, we will need to import Beautiful soup and Requests packages
@@ -41,6 +41,9 @@ Afterwards, select all of the episode containers from the season’s page. As yo
 ```html
 <div class="info" ...> </div>
 ```
+<br/>
+<img align="left" width="694" height="288" src="community html image.png">
+<br/>
 Create and populate the episode_containers list with all of the ‘info’ containers
 ```python
 	episode_containers = page_html.find_all('div', class_ = 'info')
