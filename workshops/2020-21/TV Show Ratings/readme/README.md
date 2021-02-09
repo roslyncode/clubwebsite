@@ -42,7 +42,7 @@ Afterwards, select all of the episode containers from the season’s page. As yo
 <div class="info" ...> </div>
 ```
 <br/>
-<img align="left" width="694" height="288" src="community html image.png">
+<img width="694" height="288" src="community html image.png">
 <br/>
 Create and populate the episode_containers list with all of the ‘info’ containers
 ```python
