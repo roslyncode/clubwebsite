@@ -120,7 +120,8 @@ plt.savefig("pressure.png")
 The ```plot``` function plots a line by default of the first argument. There are many other optional arguments that can be provided to specify other aspects of the plot.
 
 Open the ```pressure.png``` file to see a line chart produced.  It should look similar to the image below:
-<img width="640" height="480" src="storm eleanor basic plot.png.png">
+
+<img width="640" height="480" src="storm eleanor basic plot.png">
 
 ### Step 6: Cleaning up the Graph
 
@@ -152,7 +153,7 @@ Third, set the first date in the series, which is Midnight (00:00) on the 2nd Ja
 date_time = datetime.datetime(2018, 1, 2)
 date_at_end = datetime.datetime(2018, 1, 3, 23, 59)
 ```
-Then, set the timestep with the function ```timedelta``. The weather station records data every minute:
+Then, set the timestep with the function ```timedelta```. The weather station records data every minute:
 ```python
 step = datetime.timedelta(minutes=1)
 ```
