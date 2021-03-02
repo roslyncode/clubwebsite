@@ -103,7 +103,7 @@ Now we will be using the package matplotlib which can be used to create charts a
 
 Import the package matplotlib by adding the following to the top of your file
 ```python
-Import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 ```
 To plot the data, we add two more function calls to the end of the script:
 ```python
