@@ -194,3 +194,5 @@ plt.tight_layout()
 plt.savefig("pressure_final.png")
 ```
 
+<img width="640" height="480" src="storm eleanor plot cleaned up.png">
+
