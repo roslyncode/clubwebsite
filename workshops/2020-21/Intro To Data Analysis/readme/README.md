@@ -137,7 +137,6 @@ plt.ylabel("Pressure (hPa)")
 plt.title("Average Pressure, JCMB Weather Station, 2-3rd Jan 2018")
 ```
 
-
 For the ```xlabel```, it would be useful to convert the integers into actual timestamps, and plot those instead. This can be done with the ```datetime``` module.
 First, add ```datetime``` to the list of import statements at the top of the script.
 ```python
@@ -195,4 +194,87 @@ plt.savefig("pressure_final.png")
 ```
 
 <img width="640" height="480" src="storm eleanor plot cleaned up.png">
+
+### Step 7: Matplotlib in More Detail
+Let’s start a new example with a different set of data: scottish_hills.csv
+Write the setup at the top of the program
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+dataframe = pd.read_csv("scottish_hills.csv")
+```
+We can take a look at the relationship between two variables, take Height and Latitude for example. Extract these and assign them to the two variables x and y:
+```python
+x = dataframe.Height
+y = dataframe.Latitude
+```
+Plot them as a scatter plot by using
+```python
+plt.scatter(x, y)
+```
+And add
+```python
+plt.savefig("my_chart_name.png")
+```
+Run the script and take a look at the figure. It should be fairly plain and the axes should be automatically scaled for you so that every point fits in the plot
+
+
+### Step 8: Combining Other Libraries With Matplotlib
+Now we are going to want to plot a linear regression on the chart.  The library ```scipy``` has many statistics routines and should be imported at the top of the page
+```python
+from scipy.stats import linregress
+```
+At the bottom of the page you are going to want to get statistics for the linear regression
+```python
+stats = linregress(x, y)
+m = stats.slope
+b = stats.intercept
+```
+m is for slope and b is for the y intercept proven by the formula ```y = mx + b``` (m = slope & b = y intercept).  Stats is assigned the value of the linear regression for coordinates x and y.  This means that under your previous code you should write out
+```python
+plt.plot(x, m * x + b)
+```
+If you want to add a color argument, you can modify the line so it reads
+```python
+plt.plot(x, m * x + b, color=”red”)
+```
+
+### Step 9: Customizing Matplotlib Further
+Matplotlib has many customization options, which you can find in its [documentation](https://matplotlib.org/stable/tutorials/index.html)
+Try modifying your script using fontsize, linewidth, and color.
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+from scipy.stats import linregress
+
+dataframe = pd.read_csv("scottish_hills.csv")
+
+x = dataframe.Height
+y = dataframe.Latitude
+
+stats = linregress(x, y)
+
+m = stats.slope
+b = stats.intercept
+
+# Change the default figure size
+plt.figure(figsize=(10,10))
+
+# Change the default marker for the scatter from circles to x's
+plt.scatter(x, y, marker='x')
+
+# Set the linewidth on the regression line to 3px
+plt.plot(x, m * x + b, color="red", linewidth=3)
+
+# Add x and y labels, and set their font size
+plt.xlabel("Height (m)", fontsize=20)
+plt.ylabel("Latitude", fontsize=20)
+
+# Set the font size of the number labels on the axes
+plt.xticks(fontsize=18)
+plt.yticks(fontsize=18)
+
+plt.savefig("python-linear-reg-custom.png")
+```
 
