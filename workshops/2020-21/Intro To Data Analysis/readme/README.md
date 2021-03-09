@@ -197,6 +197,7 @@ plt.savefig("pressure_final.png")
 
 ### Step 7: Matplotlib in More Detail
 Let’s start a new example with a different set of data: scottish_hills.csv
+Download the csv [here](https://github.com/roslyncode/Files)
 Write the setup at the top of the program
 ```python
 import pandas as pd
