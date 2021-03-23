@@ -1,5 +1,6 @@
 # Workshop 10: Episode Ratings Heatmap
 <img width="1000" height="466" src="Episode Ratings Heatmap.png">
+
 ### Step 1: 
 In this workshop, we will take the csv data of episode ratings from Workshop 9 and create a scatter plot and a heatmap of this information.
 
