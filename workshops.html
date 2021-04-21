@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,167 +15,538 @@
 
     <!-- Custom styles for this template -->
     <link href="css/dark.css" rel="stylesheet">
-    
+
+    <!-- Font Awesome icons -->
+    <!--<script src="https://use.fontawesome.com/fc9c5de722.js"></script>-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
     <!-- Custom font -->
     <link href="https://fonts.googleapis.com/css?family=Overlock:700,700i,900,900i" rel="stylesheet">
-    
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico"/>
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130577286-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
+
       gtag('config', 'UA-130577286-1');
     </script>
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
+<!-- Navigation -->
+<nav id="navanchor" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
         <a class="navbar-brand" href="#">Roslyn Code Club</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item current">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="signin.html">Sign In</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="workshops.html">Workshops</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link current" href="hackathon.html">Hackathon</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="youth-workshops.html">Youth Workshops</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signin.html">Sign In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link current" href="workshops.html">Workshops</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hackathon.html">Hackathon</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="youth-workshops.html">Youth Workshops</a>
+                </li>
+            </ul>
         </div>
-      </div>
-    </nav>
+    </div>
+</nav>
 
-    <!-- Page Content -->
-    <div class="container">
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+        <h1 class="display-3"><b>Workshops</b></h1>
+        <p class="lead"><b>Click on a workshop to get started.</b></p>
+    </header>
+
+
+    <div>
+    <!-- 2020-21 workshops-->
+        <br><h2 id="2021">2020-2021 Workshops</h2><br><br>
+        <div class="row text-center">
+
+            <div class="col-lg-3 col-md-6 mb-4" id="bot">
+                <div class="card">
+                    <br><i class="fab fa-css3 fa-4x inline" aria-hidden="true"></i><br>
+                    <div class="card-body">
+                        <br><br><h4 class="card-title">CSS</h4><br>
+                    </div>
+                    <div class="card-footer">
+                        <a href="workshops/2020-21/css/readme" target="_blank" class="btn btn-primary">Instructions</a>
+                    </div>
+                </div>
+            </div>
         
-      
-    <!-- Jumbotron Header -->  
-      <header class="jumbotron my-4">
-        <h1 class="display-3"><b>Projects</b></h1>
-        <p class="lead"><b><input class="transparent text-left" type="text" value="What our members have made!" name="description"/></b></b></p>
-      </header>
-  
-      <!-- Page Features -->  
-      <div class="row text-center mt-4">
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="photos/scratchartjacob.png" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Jacob Hoffman</h4>
-            </div>
-            <div class="card-footer">
-                    <a href="https://drive.google.com/file/d/1FhroGP4wRlyyzMhOjTHUdcUtwIah2FR4/view?usp=sharing" target="_blank" class="btn btn-primary">Video</a>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="photos/smartassistantdaniel.png" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Daniel Liu</h4>
+            <div class="col-lg-3 col-md-6 mb-4" id="bot">
+                <div class="card">
+                    <br><i class="fab fa-angellist fa-4x inline" aria-hidden="true"></i><br>
+                    <div class="card-body">
+                        <br><br><h4 class="card-title">Animations</h4><br>
+                    </div>
+                    <div class="card-footer">
+                        <a href="workshops/2020-21/Animations/readme" target="_blank" class="btn btn-primary">Instructions</a>
+                    </div>
+                </div>
             </div>
-            <div class="card-footer">
-                    <a href="https://drive.google.com/file/d/1AK99s45MNCPi5vIWcKU1vc9VGQS7v-An/view?usp=sharing" target="_blank" class="btn btn-primary">Video</a>
+            
+            <div class="col-lg-3 col-md-6 mb-4" id="bot">
+                <div class="card">
+                    <br><i class="fab fa-js fa-4x inline" aria-hidden="true"></i><br>
+                    <div class="card-body">
+                        <br><br><h4 class="card-title">Snake Game with Javascript</h4><br>
+                    </div>
+                    <div class="card-footer">
+                        <a href="workshops/2020-21/Snake Game/readme" target="_blank" class="btn btn-primary">Instructions</a>
+                    </div>
+                </div>
             </div>
-          </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4" id="bot">
+                <div class="card">
+                    <br><i class="fab fa-python fa-4x inline" aria-hidden="true"></i><br>
+                    <div class="card-body">
+                        <br><br><h4 class="card-title">Web Scraping with Python</h4><br>
+                    </div>
+                    <div class="card-footer">
+                        <a href="workshops/2020-21/Web Scraping/readme" target="_blank" class="btn btn-primary">Instructions</a>
+                    </div>
+                </div>
+            </div>
+           
         </div>
+        <br/><br/><br/>
 
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="photos/weatherchartashley.png" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Ashley Mazarin</h4>
+        <div class="row text-center">
+            <div class="col-lg-3 col-md-6 mb-4" id="bot">
+                <div class="card">
+                    <br><i class="fas fa-money-bill-wave fa-4x inline" aria-hidden="true"></i><br>
+                    <div class="card-body">
+                        <br><br><h4 class="card-title">Price Tracker with Python</h4><br>
+                    </div>
+                    <div class="card-footer">
+                        <a href="workshops/2020-21/Price Tracker/readme" target="_blank" class="btn btn-primary">Instructions</a>
+                    </div>
+                </div>
             </div>
-            <div class="card-footer">
-                    <a href="https://drive.google.com/file/d/1owO0Qh6vCnBnKeaNpeg7P7JbdVARMvOW/view?usp=sharing" target="_blank" class="btn btn-primary">Video</a>
+
+            <div class="col-lg-3 col-md-6 mb-4" id="bot">
+                <div class="card">
+                    <br><i class="fas fa-film fa-4x inline" aria-hidden="true"></i><br>
+                    <div class="card-body">
+                        <br><br><h4 class="card-title">Random Movie Generator</h4><br>
+                    </div>
+                    <div class="card-footer">
+                        <a href="workshops/2020-21/Random Movie Generator/readme" target="_blank" class="btn btn-primary">Instructions</a>
+                    </div>
+                </div>
             </div>
-          </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4" id="bot">
+                <div class="card">
+                    <br><i class="fas fa-video fa-4x inline" aria-hidden="true"></i><br>
+                    <div class="card-body">
+                        <br><br><h4 class="card-title">TV Show Ratings</h4><br>
+                    </div>
+                    <div class="card-footer">
+                        <a href="workshops/2020-21/TV Show Ratings/readme" target="_blank" class="btn btn-primary">Instructions</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4" id="bot">
+                <div class="card">
+                    <br><i class="fas fa-server fa-4x inline" aria-hidden="true"></i><br>
+                    <div class="card-body">
+                        <br><br><h4 class="card-title">Intro To Data Analysis with Python</h4><br>
+                    </div>
+                    <div class="card-footer">
+                        <a href="workshops/2020-21/Intro To Data Analysis/readme" target="_blank" class="btn btn-primary">Instructions</a>
+                    </div>
+                </div>
+            </div>
         </div>
+        <br/><br/><br/>
 
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="photos/happydogslilah.png" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Ariana Mayeri and Lilah Dicker</h4>
+        <div class="row text-center">
+            <div class="col-lg-3 col-md-6 mb-4" id="bot">
+                <div class="card">
+                    <br><i class="fas fa-tv fa-4x inline" aria-hidden="true"></i><br>
+                    <div class="card-body">
+                        <br><br><h4 class="card-title">Visualizing Episode Ratings</h4><br>
+                    </div>
+                    <div class="card-footer">
+                        <a href="workshops/2020-21/Visualizing Episode Ratings/readme" target="_blank" class="btn btn-primary">Instructions</a>
+                    </div>
+                </div>
             </div>
-            <div class="card-footer">
-                    <a href="https://drive.google.com/file/d/1pg2F5CxC57EREPO8fepuPFsmXK5tvayJ/view?usp=sharing" target="_blank" class="btn btn-primary">Video</a>
+            
+            <div class="col-lg-3 col-md-6 mb-4" id="bot">
+                <div class="card">
+                    <br><i class="fas fa-fire fa-4x inline" aria-hidden="true"></i><br>
+                    <div class="card-body">
+                        <br><br><h4 class="card-title">Episode Ratings Heatmap</h4><br>
+                    </div>
+                    <div class="card-footer">
+                        <a href="workshops/2020-21/Episode Ratings Heatmap/readme" target="_blank" class="btn btn-primary">Instructions</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>   
+        </div>
     </div>
-    <br/><br/><br/>
+    
 
-    <div class="row text-center mt-4">
-      <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="photos/loraxgamelilah.png" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Ariana Mayeri and Lilah Dicker</h4>
+
+
+    <!-- 2019-20 worskshops -->
+    <div>
+
+        <br><h2 id="1920">2019-20 Workshops</h2><br><br>
+
+        <!-- 1st set of workshops -->
+        <div class="row text-center">
+
+            <div class="col-lg-3 col-md-6 mb-4" id="bot">
+                <div class="card">
+                    <br><i class="fas fa-tools fa-4x inline" aria-hidden="true"></i><br>
+                    <div class="card-body">
+                        <br><br><h4 class="card-title">Python</h4><br>
+                    </div>
+                    <div class="card-footer">
+                        <a href="workshops/2019-20/python" target="_blank" class="btn btn-primary">Instructions</a>
+                    </div>
+                </div>
             </div>
-            <div class="card-footer">
-                    <a href="https://drive.google.com/file/d/1-oMmN-yUyha65Rp_G-KBlZsc5aRTst5Y/view?usp=sharing" target="_blank" class="btn btn-primary">Video</a>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <br><i class="fas fa-mouse-pointer fa-4x inline" aria-hidden="true"></i><br>
+                    <div class="card-body">
+                        <br><h4 class="card-title">APP LAB</h4>
+                    </div>
+                    <div class="card-footer">
+                        <a href="workshops/2019-20/WorkShop1/index.html" target="_blank" class="btn btn-primary">Exemplar</a>
+                        <a href="workshops/2019-20/WorkShop1/readme/" target="_blank" class="btn btn-primary">Instructions</a>
+                    </div>
+                </div>
             </div>
-          </div>
+
+            <div class="col-lg-3 col-md-6 mb-4" id="bot">
+                <div class="card">
+                    <br><i class="fas fa-tools fa-4x inline" aria-hidden="true"></i><br>
+                    <div class="card-body">
+                        <br><br><h4 class="card-title">Construct</h4><br>
+                    </div>
+                    <div class="card-footer">
+                        <a href="workshops/2019-20/construct" target="_blank" class="btn btn-primary">Instructions</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="photos/kinematicsrobotlindsay.png" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Lindsay Fabricant</h4>
-            </div>
-            <div class="card-footer">
-                    <a href="https://drive.google.com/file/d/1V1w6ZRmQqKmgOgxNSn8dUiMvIPMjdbR_/view?usp=sharing" target="_blank" class="btn btn-primary">Video</a>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="photos/ecositeyeji.png" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Yeji Kim, Nikitha Somineni, Alisha Lukose</h4>
+
+    </div>
+    <div>
+        <!-- 2018-19 worskshops -->
+        <br><h2 id="1819">2018-19 Workshops</h2><br><br>
+
+        <!-- 1st set of workshops -->
+        <div class="row text-center">
+
+            <div class="col-lg-3 col-md-6 mb-4" id="bot">
+                <div class="card">
+                    <br><i class="fas fa-4x fa-robot"></i><br>
+                    <div class="card-body">
+                        <br><br><h4 class="card-title">Bots</h4><br>
+                    </div>
+                </div>
             </div>
-            <div class="card-footer">
-                    <a href="https://drive.google.com/file/d/1ADlylq8injLeZyLteN5VR5089XUFm8Oj/view?usp=sharing" target="_blank" class="btn btn-primary">Video</a>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <br><i class="far fa-laugh-squint fa-4x inline" aria-hidden="true"></i><br>
+                    <div class="card-body">
+                        <br><h4 class="card-title">Joke Bot</h4>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://web.telegram.org/#/im?p=@jokesOnYouBot" target="_blank" class="btn btn-primary">Exemplar</a>
+                        <a href="workshops/2018-19/1jokeBot/readme/" target="_blank" class="btn btn-primary">Instructions</a>
+                    </div>
+                </div>
             </div>
-          </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <br><i class="fas fa-fire fa-4x inline" aria-hidden="true"></i><br>
+                    <div class="card-body">
+                        <br><h4 class="card-title">Hacktoberfest </h4>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://medium.freecodecamp.org/i-just-got-my-free-hacktoberfest-shirt-heres-a-quick-way-you-can-get-yours-fa78d6e24307" target="_blank" class="btn btn-primary">Guide</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <br><i class="fas fa-film fa-4x inline" aria-hidden="true"></i><br>
+                    <div class="card-body">
+                        <br><h4 class="card-title">Movie Bot</h4>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.messenger.com/t/moviedbot" target="_blank" class="btn btn-primary">Exemplar</a>
+                        <a href="workshops/2018-19/2movieBot/readme/" target="_blank" class="btn btn-primary">Instructions</a>
+                        <div class="unav"><c class="unavt">Under Construction</c></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <br><i class="fas fa-question fa-4x inline" aria-hidden="true"></i><br>
+                    <div class="card-body">
+                        <br><h4 class="card-title">FAQ Bot</h4>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://recast.ai/michael-erickson/mikes-faq-bot/train" target="_blank" class="btn btn-primary">Exemplar</a>
+                        <a href="workshops/2018-19/3FAQbot/readme/" target="_blank" class="btn btn-primary">Instructions</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <br><i class="fas fa-snowflake fa-4x inline" aria-hidden="true"></i><br>
+                    <div class="card-body">
+                        <br><h4 class="card-title">Holiday Challenge</h4>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://hackclub.com/challenge" target="_blank" class="btn btn-primary">Instructions</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <br><i class="fas fa-question fa-4x inline" aria-hidden="true"></i><br>
+                    <div class="card-body">
+                        <br><h4 class="card-title">Python Tutorial</h4>
+                    </div>
+                    <div class="card-footer">
+                        <a href="workshops/2018-19/Python1/readme/" target="_blank" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
+        <!-- 2nd set of workshops -->
+        <br/><br/><br/>
+
+        <div class="row text-center">
+
+            <div class="col-lg-3 col-md-6 mb-4" id="html">
+                <div class="card">
+                    <br><i class="fab fa-4x fa-html5"></i><br>
+                    <div class="card-body">
+                        <br><br><h4 class="card-title">HTML/JS/CSS</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <br><i class="fa fa-desktop fa-4x inline" aria-hidden="true"></i><br>
+                    <div class="card-body">
+                        <br><h4 class="card-title">HTML Starter Guide</h4>
+                    </div>
+                    <div class="card-footer">
+                        <a href="workshops/2018-19/4HTML/readme/" target="_blank" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- End 2018-19 workshops -->
+
+        <hr>
+
+        <!-- 2017-18 worskshops -->
+        <div>
+
+            <br><h2>2017-18 Workshops</h2><br><br>
+
+            <!-- 1st set of workshops -->
+            <div class="row text-center">
+
+                <div class="col-lg-3 col-md-6 mb-4" id="html">
+                    <div class="card">
+                        <br><i class="fab fa-4x fa-html5"></i><br>
+                        <div class="card-body">
+                            <br><br><h4 class="card-title">HTML/JS/CSS</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <br><i class="fa fa-desktop fa-4x inline" aria-hidden="true"></i><br>
+                        <div class="card-body">
+                            <br><h4 class="card-title">Personal Website</h4>
+                        </div>
+                        <div class="card-footer">
+                            <a href="workshops/2017-18/1website/index.html" target="_blank" class="btn btn-primary">Exemplar</a>
+                            <a href="http://roslyncode.tech/workshops/2017-18/1website/readme/" target="_blank" class="btn btn-primary">Instructions</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <br><i class="fa fa-mouse-pointer fa-4x faa-pulse animated-hover faa-fast" aria-hidden="true"></i><br>
+                        <div class="card-body">
+                            <br><h4 class="card-title">Navigation Bar</h4>
+                        </div>
+                        <div class="card-footer">
+                            <a href="workshops/2017-18/2navbar/index.html" target="_blank" class="btn btn-primary">Exemplar</a>
+                            <a href="http://roslyncode.tech/workshops/2017-18/2navbar/readme/" target="_blank" class="btn btn-primary">Instructions</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <br><i class="fa fa-street-view fa-4x faa-bounce animated-hover" aria-hidden="true"></i><br>
+                        <div class="card-body">
+                            <br><h4 class="card-title">Cringe</h4>
+                        </div>
+                        <div class="card-footer">
+                            <a href="workshops/2017-18/3cringe/index.html" target="_blank" class="btn btn-primary">Exemplar</a>
+                            <a href="http://roslyncode.tech/workshops/2017-18/3cringe/readme/" target="_blank" class="btn btn-primary">Instructions</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <br><i class="fa fa-lock fa-4x faa-burst animated-hover" aria-hidden="true"></i><br>
+                        <div class="card-body">
+                            <br><h4 class="card-title">Puzzle Me</h4>
+                        </div>
+                        <div class="card-footer">
+                            <a href="workshops/2017-18/4lock/index.html" target="_blank" class="btn btn-primary">Exemplar</a>
+                            <a href="http://roslyncode.tech/workshops/2017-18/4lock/readme/" target="_blank" class="btn btn-primary">Instructions</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <br><i class="fa fa-magic fa-4x faa-tada animated-hover" aria-hidden="true"></i><br>
+                        <div class="card-body">
+                            <br><h4 class="card-title">Canvas</h4>
+                        </div>
+                        <div class="card-footer">
+                            <a href="workshops/2017-18/5canvas/index.html" target="_blank" class="btn btn-primary">Exemplar</a>
+                            <a href="http://roslyncode.tech/workshops/2017-18/5canvas/readme/" target="_blank" class="btn btn-primary">Instructions</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <br><br><br>
+
+            <!-- 2nd set of workshops -->
+            <div class="row text-center">
+
+                <div class="col-lg-3 col-md-6 mb-4" id="arduino">
+                    <div class="card">
+                        <br><i class="fa fa-microchip fa-4x inline" aria-hidden="true"></i><br>
+                        <div class="card-body">
+                            <br><br><h4 class="card-title">Arduino</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <br><i class="far fa-lightbulb fa-4x faa-wrench animated-hover"></i><br>
+                        <div class="card-body">
+                            <br><h4 class="card-title">Blink an LED</h4>
+                        </div>
+                        <div class="card-footer">
+                            <a href="workshops/2017-18/7blinkLED/readme" target="_blank" class="btn btn-primary">Instructions</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <br><i class="fa fa-flag fa-4x faa-wrench animated-hover"></i><br>
+                        <div class="card-body">
+                            <br><h4 class="card-title">Ready, Set, GO</h4>
+                        </div>
+                        <div class="card-footer">
+                            <a href="workshops/2017-18/8buttonLED/readme" target="_blank" class="btn btn-primary">Instructions</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <br><i class="fas fa-bolt fa-4x faa-vertical animated-hover" aria-hidden="true"></i><br>
+                        <div class="card-body">
+                            <br><h4 class="card-title">Flashlight</h4>
+                        </div>
+                        <div class="card-footer">
+                            <a href="workshops/2017-18/9lightLED/readme" target="_blank" class="btn btn-primary">Instructions</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- End of 2017-18 worskshops -->
+
     </div>
 
+</div>
 
 
-    <!-- /.container -->
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- /.container -->
 
-  </body>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
 
 </html>
