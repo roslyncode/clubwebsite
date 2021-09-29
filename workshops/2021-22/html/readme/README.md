@@ -2,7 +2,7 @@
 
 This workshop is for people with no prior knowledge of coding. We will cover the basics of HTML and create a personal website. 
 
-### Step 1: Setting up Atom
+### Step 1: Setting up Repl
 
 Before we start coding, we have to first set up a text editor. We recommend using repl.it as it has an intuitive interface and allows you to work together with others.
 
@@ -155,3 +155,7 @@ The style attribute modifies the shape of the image using `width:` and `height:`
 ### Step 7: Put it all together!
 
 Now it's time to combine all of these steps and create a personal website on your own!
+
+### Challenge
+
+Try to add a navigation bar to your website! You can use the internet or other resources as a guide.
