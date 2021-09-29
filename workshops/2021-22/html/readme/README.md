@@ -154,4 +154,4 @@ The style attribute modifies the shape of the image using `width:` and `height:`
 
 ### Step 7: Put it all together!
 
-Now, it's time to combine all of these steps and create a personal website on your own!
+Now it's time to combine all of these steps and create a personal website on your own!
