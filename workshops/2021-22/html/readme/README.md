@@ -73,7 +73,7 @@ We will go over how to further expand your options with the use of CSS in future
 `<strong>` - Important text <br>
 `<em>` - Emphasized text <br>
 
-* although these first 3 have the same default display, they have different semantics on a page *
+* although these first 3 have the same default display, they have different semantics on a page 
 
 `<i>` - Italic text <br>
 `<mark>` - Marked/highlighted text <br>
@@ -139,7 +139,7 @@ The src attribute is the source of the image, which can be either a URL or a fil
 The alt attribute is the alternative for if the image is not able to be displayed. 
 It is usually set as what the image is supposed to be. 
 
-The style attribute modifies the shape of the image using `width:` and `height:,` as well as its position on the screen with `float:`.
+The style attribute modifies the shape of the image using `width:` and `height:`, as well as its position on the screen with `float:`.
 
 ```html
 <!DOCTYPE html>
