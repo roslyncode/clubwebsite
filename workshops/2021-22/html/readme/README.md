@@ -75,13 +75,13 @@ We will go over how to further expand your options with the use of CSS in future
 
 * although first 3 have the same default display, they have different semantics on a page *
 
-`<i>` - Italic text
-`<mark>` - Marked/highlighted text
-`<small>` - Smaller text
-`<sub>` - Subscript text
-`<sup>` - Superscript text
-`<del>` - Deleted text
-`<ins>` - Inserted text
+`<i>` - Italic text <br>
+`<mark>` - Marked/highlighted text <br>
+`<small>` - Smaller text <br>
+`<sub>` - Subscript text <br>
+`<sup>` - Superscript text <br>
+`<del>` - Deleted text <br>
+`<ins>` - Inserted text <br>
 
 ### Step 5: Lists
 
@@ -132,14 +132,14 @@ The ordered list tag is `<ol>` and like the unordered list, each list item must 
 
 Images and GIFs are added in HTML with the <img> tag
 
-It is formatted as <img src = “” alt = “” style = “”> 
+It is formatted as `<img src = “...” alt = “...” style = “...”>` 
 
 The src attribute is the source of the image, which can be either a URL or a file path of the image. 
 
 The alt attribute is the alternative for if the image is not able to be displayed. 
 It is usually set as what the image is supposed to be. 
 
-The style attribute modifies the shape of the image using “width:” and “height:,” as well as its position on the screen with “float:.”
+The style attribute modifies the shape of the image using `width:` and `height:,` as well as its position on the screen with `float:`.
 
 ```html
 <!DOCTYPE html>
