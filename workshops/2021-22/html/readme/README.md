@@ -69,11 +69,11 @@ Although there are several ways you can stylize your text directly through HTML 
 
 We will go over how to further expand your options with the use of CSS in future workshops.
   
-`<b>` - Bold text
-`<strong>` - Important text
-`<em>` - Emphasized text
+`<b>` - Bold text <br>
+`<strong>` - Important text <br>
+`<em>` - Emphasized text <br>
 
-* although first 3 have the same default display, they have different semantics on a page *
+* although these first 3 have the same default display, they have different semantics on a page *
 
 `<i>` - Italic text <br>
 `<mark>` - Marked/highlighted text <br>
