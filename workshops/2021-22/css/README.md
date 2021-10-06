@@ -55,4 +55,5 @@ To call an id, use a # followed by the id name.
 To call a class attribute, use a . followed by the class name. 
 Example (from last year; can use the example from last workshop as well)
 
-### Challenge: Use CSS to turn an unordered list into a navigation bar for your website! (Hint: think about the different attributes of a navigation bar)
+### Challenge
+Use CSS to turn an unordered list into a navigation bar for your website! (Hint: think about the different attributes of a navigation bar)
