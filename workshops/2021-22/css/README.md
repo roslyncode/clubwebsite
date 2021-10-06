@@ -1,5 +1,5 @@
-# Workshop 2: CSS and JavaScript
-In this workshop, we will explore the capabilities of CSS and JavaScript. 
+# Workshop 2: CSS
+In this workshop, we will explore the capabilities of CSS. 
 
 # CSS
 ### Step 1: Setting up CSS
