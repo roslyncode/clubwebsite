@@ -265,8 +265,10 @@ Then, let's make buttons to change our box's color! You can use any combination 
    </head>
 </html>
 ```
-  
+
+https://replit.com/join/kaeacxgecr-lindsayfabrican
 
 ### Challenge
 
 Try to add more objects and colors! See if you can receive input for a color and then make the box the color of your string! Next week, we will make a login form using JavaScript to access your coding prjoects on your personal website!
+    
