@@ -2,7 +2,7 @@
 
 This workshop is for people with no prior knowledge of JavaScript. We will cover the basics of JavaScript and create a color changing game. 
 
-To begin, open up your personal website, and create a new file. Click the little plus button in the top left sidebar, and name it '<NAME.html>'.
+To begin, open up your personal website, and create a new file. Click the little plus button in the top left sidebar, and name it `<NAME.html>`.
 
 ### Step 1: Basic Setup
 
@@ -37,7 +37,7 @@ At the end of the function, we can return a value using 'return'.
 
 ### Step 3: Variables
 
-In JavaScript to create a new variable we use '<var>'. Then, to assign the varibale a value, we use the operator '='. 
+In JavaScript to create a new variable we use `<var>`. Then, to assign the varibale a value, we use the operator `=`. 
 We do not need to use specific data types in JavaScript. Theses statements end with a semicolon. 
 Here is an example function with a variable.
   
