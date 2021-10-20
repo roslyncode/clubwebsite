@@ -187,8 +187,7 @@ Then, let's add a title for our project!
 
 After this, to create our box and display it on the screen, we want to write the following code:
 
-```
-html
+```html
 <!DOCTYPE html>
 <html>
     <head>
@@ -226,8 +225,7 @@ html
 Then, let's make buttons to change our box's color! You can use any combination of three numbers 
 0-255 to specify red, blue, and green values.
 
-```
-html
+```html
 <!DOCTYPE html>
 <html>
     <head>
