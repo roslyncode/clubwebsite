@@ -1,274 +1,137 @@
-# Workshop 3: Introduction to JavaScript
+# Workshop 3: Introduction to JavaScript pt. 2
 
-This workshop is for people with no prior knowledge of JavaScript. We will cover the basics of JavaScript and create a color changing game. 
+This workshop is for people with a working knowledge of JavaScript. Today's activity will be to create a login page for a website. 
 
 To begin, open up your personal website, and create a new file. Click the little plus button in the top left sidebar, and name it '<NAME.html>'.
 
 ### Step 1: Basic Setup
 
-In JavScript, we begin coding in an HTML file by creating a script. To do this we add '<script>' into our HTML document.  
+First, to start setting up your web page, create a header!
 
 ```html
-<!DOCTYPE html>
 <html>
-    <script>
-        // code goes here!
-    </script>
+  <header>
+    Login to My Website! 
+  </header>
 </html>
 ```
 
-
-### Step 2: Basic JavaScript Commands 
+### Step 2: Create a Form Tag 
   
-To create a function in JavaScript, we use the syntax below. We can code many functions to perform different operations. 
+Then, we need to create a form tag in html for user inputs. When we evaluate the input in JavaScript, we will also need to create a variable for the value as follows.
   
 ```html
-<!DOCTYPE html>
 <html>
-    <script>
-        function nameOfFunction(parameter1, parameter2) {
-          // function code goes here!
-        }
-    </script>
+  <header>
+    Login to My Website! 
+  </header>
+    
+  <form id="logform" onsubmit="return false">
+  </form>
+  
+  <script>
+    var loginForm = document.getElementById("logform");
+  <script>
 </html>
 ```
   
-At the end of the function, we can return a value using 'return'.
+### Step 3: Input Username and Password
 
-### Step 3: Variables
-
-In JavaScript to create a new variable we use '<var>'. Then, to assign the varibale a value, we use the operator '='. 
-We do not need to use specific data types in JavaScript. Theses statements end with a semicolon. 
-Here is an example function with a variable.
+Next, the user will input their username and password. We will need to identify the input type as Identify the input type, name it, and create an id for it. The name attribute will also help to refrence elements when we are coding in JavaScript. 
   
-```
-html
-<!DOCTYPE html>
-<html>
-    <script>
-        function sum(parameter1, parameter2) {
-          var sum = parameter1 + parameter2;
-          return sum;
-        }
-    </script>
-</html>
-```
-  
-### Step 4: Loops
-
-Two important loops we can learn about in JavaScript are for loops and while loops. 
-  
-In a for loop, the block of code is repeated a specified number of times.
-  
-```
-html
-<!DOCTYPE html>
-<html>
-    <script>
-        function nameOfFunction() {
-          for (var i = START; i < END; i++) {
-            // code goes here!
-          }
-        }
-    </script>
-</html>
-```
-  
-In a while loop, the block of code is repeated while a condition remains true.
-  
-  
-```
-html
-<!DOCTYPE html>
-<html>
-    <script>
-        function nameOfFunction() {
-          var i = START;
-          while (i < END) {
-            // code goes here!
-            i = i+1;
-          }
-        }
-    </script>
-</html>
-```
-
-### Step 5: Challenge
-
-Today's activity is to create a color changing box game. We will learn about JavaScript in the process!
-
-First, we want to create our box element. To do this, we add the following code for its style.
-
 ```html
-<!DOCTYPE html>
 <html>
-    <head>
-      <style>
-        .box {
-
-            height: 200px;
-            width: 200px;
-            padding: 10px ;
-            border: 10px solid black;
-            margin: 0;
-          }
-          .center {
-            position: absolute;
-            padding: 10px 24px; 
-            left: 50%;
-         }
-      </style>
-   </head>
-</html>
-```
-
-Now, we are going to begin coding in JavaScript. To start, let's create a function that changes the color of the box to the user input.
-
-```html
-<!DOCTYPE html>
-<html>
-    <head>
-      <style>
-        .box {
-
-            height: 200px;
-            width: 200px;
-            padding: 10px ;
-            border: 10px solid black;
-            margin: 0;
-          }
-          .center {
-            position: absolute;
-            padding: 10px 24px; 
-            left: 50%;
-         }
-      </style>
-      <script>
-        function changeHeadingBg(color){
-            document.getElementById("b").style.background = color;
-        }
-      </script>
-   </head>
-</html>
-```
-
-Then, let's add a title for our project!
-
-```html
-<!DOCTYPE html>
-<html>
-    <head>
-      <style>
-        .box {
-
-            height: 200px;
-            width: 200px;
-            padding: 10px ;
-            border: 10px solid black;
-            margin: 0;
-          }
-          .center {
-            position: absolute;
-            padding: 10px 24px; 
-            left: 50%;
-         }
-      </style>
-      <script>
-        function changeHeadingBg(color){
-            document.getElementById("b").style.background = color;
-        }
-      </script>
-      <body>
-        <h1 id="h">Welcome to My Color Changing Game!</h1>
-      </body>
-   </head>
-</html>
-```
-
-After this, to create our box and display it on the screen, we want to write the following code:
-
-```
-html
-<!DOCTYPE html>
-<html>
-    <head>
-      <style>
-        .box {
-
-            height: 200px;
-            width: 200px;
-            padding: 10px ;
-            border: 10px solid black;
-            margin: 0;
-          }
-          .center {
-            position: absolute;
-            padding: 10px 24px; 
-            left: 50%;
-         }
-      </style>
-      <script>
-        function changeHeadingBg(color){
-            document.getElementById("b").style.background = color;
-        }
-      </script>
-      <body>
-        <h1 id="h">Welcome to My Color Changing Game!</h1>
-        <div id = "b" class = "center"> 
-            <div class = "box" > 
-            </div>
-        </div>
-      </body>
-   </head>
+  <header>
+    Login to My Website! 
+  </header>
+    
+  <form id="logform" onsubmit="return false">
+     Username: 
+     <input type="text" name="username" id="usernamePlace"> <br>
+     
+     Password: 
+     <input type="password" name="password" id="passwordPlace"> <br>
+     
+  </form>
+  
+  <script>
+    var loginForm = document.getElementById("logform");
+  <script>
 </html>
 ```
   
-Then, let's make buttons to change our box's color! You can use any combination of three numbers 
-0-255 to specify red, blue, and green values.
+### Step 4: Submit
 
-```
-html
-<!DOCTYPE html>
+Once the user inputs the username and password, they will want to hit submit to sign into the page. We will use the type 'submit', which is similiar to the button tag, but the input type is used in form tags, and it allows for an inclick event. We will then create a variable for the login button being clicked in JavaScript.  
+  
+```html
 <html>
-    <head>
-      <style>
-        .box {
-
-            height: 200px;
-            width: 200px;
-            padding: 10px ;
-            border: 10px solid black;
-            margin: 0;
-          }
-          .center {
-            position: absolute;
-            padding: 10px 24px; 
-            left: 50%;
-         }
-      </style>
-      <script>
-        function changeHeadingBg(color){
-            document.getElementById("b").style.background = color;
-        }
-      </script>
-      <body>
-        <h1 id="h">Welcome to My Color Changing Game!</h1>
-        <div id = "b" class = "center"> 
-            <div class = "box" > 
-            </div>
-        </div>
-        <div>
-          <label>Change Heading Background To:</label>
-          <button type="button" onclick="changeHeadingBg('rgb(255,0,0)');">Red</button>
-          <button type="button" onclick="changeHeadingBg('rgb(0,255,0)');">Green</button>
-          <button type="button" onclick="changeHeadingBg('rgb(0,0,255)');">Blue</button>
-        </div>
-      </body>
-   </head>
+  <header>
+    Login to My Website! 
+  </header>
+    
+  <form id="logform" onsubmit="return false">
+     Username: 
+     <input type="text" name="username" id="usernamePlace"> <br>
+     
+     Password: 
+     <input type="password" name="password" id="passwordPlace"> <br>
+     
+     <input type="submit" value="Login" id="signIn"> 
+     
+  </form>
+  
+  <script>
+    var loginForm = document.getElementById("logform");
+    var loginButton = document.getElementById("signIn");
+  <script>
 </html>
 ```
+
+### Step 5: Execute Login
+
+Finally, we need to create a program that is executed when the login button is clicked. Here we can create and set a name for our username and password. The program will check if it is correct and send an alert in response. If the input is correct, it can open to a new page, '<nice.html>'. 
   
+```html
+<html>
+  <header>
+    Login to My Website! 
+  </header>
+    
+  <form id="logform" onsubmit="return false">
+     Username: 
+     <input type="text" name="username" id="usernamePlace"> <br>
+     
+     Password: 
+     <input type="password" name="password" id="passwordPlace"> <br>
+     
+     <input type="submit" value="Login" id="signIn"> 
+     
+  </form>
+    
+  <a href="nice.html" style="display: none" id="hidden">Nice</a>
+  
+  <script>
+    var loginForm = document.getElementById("logform");
+    var loginButton = document.getElementById("signIn");
+      
+    loginButton.addEventListener("click", (e) => {      
+    var username = loginForm.username.value;
+    var password = loginForm.password.value;
+    if (username === "alex" && password === "hmm"){
+      alert("great");
+      window.location.href = "nice.html";
+      document.getElementById("hidden").style.display="block";
+      return false;
+    }
+        else {alert("no")}
+    })
+      
+  <script>
+</html>
+```
+
 
 ### Challenge
 
-Try to add more objects and colors! See if you can receive input for a color and then make the box the color of your string! Next week, we will make a login form using JavaScript to access your coding prjoects on your personal website!
+See if you can make the login work for multiple login combinations! You can also write code for the page '<nice.html>' when the input is correct!
